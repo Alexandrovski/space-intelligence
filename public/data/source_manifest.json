@@ -1,0 +1,98 @@
+{
+  "version": "0.3",
+  "mission_keywords": {
+    "perseverance": ["perseverance", "mars 2020", "jezero"],
+    "webb": ["webb", "jwst", "james webb"],
+    "voyager": ["voyager"],
+    "new-horizons": ["new horizons"],
+    "parker": ["parker solar probe", "parker"],
+    "europa-clipper": ["europa clipper", "europa"],
+    "juice": ["juice", "jupiter icy moons", "ganymede"],
+    "psyche": ["psyche"],
+    "lucy": ["lucy", "trojan"],
+    "hubble": ["hubble"],
+    "curiosity": ["curiosity", "gale crater"],
+    "euclid": ["euclid"],
+    "solar-orbiter": ["solar orbiter"],
+    "bepicolombo": ["bepicolombo"],
+    "osiris-apex": ["osiris-apex", "osiris apex", "apophis"],
+    "tess": ["tess"],
+    "chandra": ["chandra"],
+    "mars-orbiters": ["mars reconnaissance orbiter", "mro", "odyssey", "mars express", "trace gas orbiter", "tgo"],
+    "roman": ["roman space telescope", "nancy grace roman"],
+    "hera": ["hera", "dart", "dimorphos", "didymos"],
+    "neo-surveyor": ["neo surveyor", "near-earth object"],
+    "dragonfly": ["dragonfly", "titan"],
+    "rosalind-franklin": ["rosalind franklin", "exomars"],
+    "plato": ["plato"],
+    "comet-interceptor": ["comet interceptor"],
+    "tianwen-2": ["tianwen-2", "tianwen 2", "kamo'oalewa", "kamo’oalewa"],
+    "hayabusa2": ["hayabusa2", "hayabusa 2", "ky26", "ryugu"]
+  },
+  "sources": [
+    {
+      "id": "nasa-recent",
+      "label": "NASA Recently Published",
+      "agency": "NASA",
+      "kind": "rss",
+      "url": "https://www.nasa.gov/feed/",
+      "weight": 1
+    },
+    {
+      "id": "nasa-science-news",
+      "label": "NASA Science News",
+      "agency": "NASA Science",
+      "kind": "html",
+      "url": "https://science.nasa.gov/science-news/",
+      "weight": 4
+    },
+    {
+      "id": "nasa-science-blogs",
+      "label": "NASA Science Blog",
+      "agency": "NASA Science",
+      "kind": "html",
+      "url": "https://science.nasa.gov/blogs/science-news/",
+      "weight": 4
+    },
+    {
+      "id": "jpl-news",
+      "label": "JPL News",
+      "agency": "JPL",
+      "kind": "rss",
+      "url": "https://www.jpl.nasa.gov/feeds/news/",
+      "weight": 5
+    },
+    {
+      "id": "jpl-podcasts",
+      "label": "JPL Podcasts",
+      "agency": "JPL",
+      "kind": "rss",
+      "url": "https://www.jpl.nasa.gov/feeds/podcasts/",
+      "weight": 2
+    },
+    {
+      "id": "esa-space-science",
+      "label": "ESA Space Science",
+      "agency": "ESA",
+      "kind": "rss",
+      "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+      "weight": 5
+    },
+    {
+      "id": "esa-science-tech",
+      "label": "ESA Science & Technology",
+      "agency": "ESA",
+      "kind": "rss",
+      "url": "https://sci.esa.int/newssyndication/rss/sciweb.xml",
+      "weight": 3
+    },
+    {
+      "id": "cneos-news",
+      "label": "NASA CNEOS News",
+      "agency": "NASA/JPL",
+      "kind": "html",
+      "url": "https://cneos.jpl.nasa.gov/news/",
+      "weight": 3
+    }
+  ]
+}

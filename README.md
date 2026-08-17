@@ -42,14 +42,22 @@ Never commit real secrets.
 ## Included
 
 - Next.js App Router + TypeScript
-- Responsive public dashboard
-- Mission filtering
+- V0.3 mission-control dashboard mounted at `/`
+- Real mission imagery and source/freshness captions
+- 19 active mission and observatory cards
+- 9-project future launch and arrival pipeline
+- Mission-neighborhood strip and secondary orbit map
+- Source-ranked snapshot and position datasets in `public/data`
+- Mission, map, and pipeline filtering
 - Static mission detail pages
 - Primary-source outbound links
 - Link-preview metadata
 - Vercel cron placeholder
-- Clean data/component separation
 - No required database or credentials
+
+The V0.3 homepage is kept as a self-contained static application in
+`public/dashboard.html`. A `beforeFiles` rewrite in `next.config.ts` serves it
+at `/` while preserving the Next.js mission and API routes.
 
 ## Deliberate limitation
 

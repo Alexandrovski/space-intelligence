@@ -1,0 +1,683 @@
+{
+  "version": "0.3",
+  "generated_at": "2026-08-09T01:18:30Z",
+  "status": "ok",
+  "summary": {
+    "source_count": 8,
+    "ok_sources": 6,
+    "event_count": 30
+  },
+  "events": [
+    {
+      "title": "ESA’s Mars Express meets NASA’s Psyche",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/07/ESA_s_Mars_Express_meets_NASA_s_Psyche",
+      "summary": "Image: Mars Express image",
+      "published_at": "2026-07-17T16:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "psyche",
+        "mars-orbiters"
+      ],
+      "relevance_score": 23,
+      "why_it_matters": "Cross-mission signal; useful when a development connects multiple spacecraft, observatories, or science themes."
+    },
+    {
+      "title": "Thousands of planets are hidden in this photo",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/06/Thousands_of_planets_are_hidden_in_this_photo",
+      "summary": "Video: 00:10:45 Millions of stars. Thousands of hidden worlds. One unprecedented view of our galaxy. Three years since launch , ESA’s Euclid space telescope reveals the Milky Way galaxy’s centre in extraordinary detail: a mosaic of tens of millions of stars captured in just 26 hours.But this is more than an image. It is a map of stellar evolution, from dark clouds where stars are being born to ancient populations packed into the galactic bulge. And hidden within this dense field of light are planets we cannot see directly. Through gravitational microlensing, astronomers detect distant worlds by measuring tiny, temporary changes in light as stars pass in front of one another, revealing planets and even their masses through gravity alone. Euclid, originally built to explore dark matter and dark energy, is now helping open a new window on our own galaxy, and the unseen worlds within it.",
+      "published_at": "2026-07-01T08:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "euclid"
+      ],
+      "relevance_score": 19,
+      "why_it_matters": "Relevant to euclid; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "ESA’s Euclid captures the Milky Way’s crowded heart",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/06/ESA_s_Euclid_captures_the_Milky_Way_s_crowded_heart",
+      "summary": "Video: 00:03:00 This is the largest high-resolution photo ever made of our Milky Way galaxy’s centre in visible light. It was taken on 23 March 2025 by the European Space Agency’s Euclid space telescope. Packed with more than 60 million stars, this image opens the door for scientists to confirm the existence of any exoplanet found in this region and measure its mass using tiny changes in starlight over time.&nbsp; The galactic bulge – the central region of our galaxy – is a vast, tightly packed structure filled mainly with old, cooler stars, giving it its characteristic yellow colour. Seen from some 26 000 light-years away, Euclid observes the galaxy’s centre through a complex foreground of material along its line of sight.&nbsp;&nbsp; This ultra-wide view towards the bulge reveals not only stars, but also seemingly empty dark regions. The dark patches are not devoid of stars: they mark dense, dust-rich molecular clouds that absorb and scatter light from the bulge behind them. As Euclid looks through two of the Milky Way’s spiral arms, it also encounters regions of active star formation, traced by newly formed, massive blue stars. Their intense ultraviolet radiation ionises surrounding hydrogen gas, producing the faint red glow.&nbsp;&nbsp; Learn more .",
+      "published_at": "2026-06-24T10:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "euclid"
+      ],
+      "relevance_score": 19,
+      "why_it_matters": "Relevant to euclid; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Perseverance’s Sample Tubes Ready for Mars",
+      "url": "https://www.jpl.nasa.gov/videos/perseverances-sample-tubes-ready-for-mars",
+      "summary": "One key activity for NASA's Perseverance Mars rover, which is on its way to the Red Planet, will be to collect samples of Martian rock and regolith (broken rock and dust) for future return to Earth. Because scientists want to be confident that any signs of ancient life they might observe in samples returned to Earth are from Mars, not Earth, Perseverance's Sample Caching System -- including the tubes the samples go in -- had to be the cleanest set of components humankind has ever launched into space. NASA’s Jet Propulsion Laboratory met the challenge. A future mission, which involves a collaboration between NASA and the European Space Agency, will return the samples to Earth. The Perseverance rover is set to land on the surface of Mars on February 18, 2021. For more information on the mission, visit: https://mars.nasa.gov/perseverance/ Credit: NASA/JPL-Caltech",
+      "published_at": "2020-12-22T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 18,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Mars 2020 Perseverance Rover Sample Caching System",
+      "url": "https://www.jpl.nasa.gov/videos/mars-2020-perseverance-rover-sample-caching-system",
+      "summary": "Watch as NASA-JPL engineers test the Sample Caching System on the Perseverance Mars rover. Described as one of the most complex robotic systems ever built, the Sample and Caching System will collect core samples from the rocky surface of Mars, seal them in tubes and leave them for a future mission to retrieve and bring back to earth. The team is on track to launch Perseverance in July 2020 and land in Mars’ Jezero Crater in February 2021. For more information on the Mars 2020 Perseverance mission, please go to: https://mars.nasa.gov/mars2020/",
+      "published_at": "2020-06-02T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 18,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "NASA's Spitzer Space Telescope: Unveiling the Universe",
+      "url": "https://www.jpl.nasa.gov/videos/nasas-spitzer-space-telescope-unveiling-the-universe",
+      "summary": "After 16 years of unveiling the infrared universe, NASA's Spitzer Space Telescope has left a singular legacy. As one of NASA’s four Great Observatories -- a series of powerful telescopes including Hubble, Chandra and Compton that can observe the cosmos in different parts of the electromagnetic spectrum --Spitzer quickly became a pioneer in the exploration of the worlds beyond our human vision. From stars being born to planets beyond our solar system (like the seven Earth-size planets around the star TRAPPIST-1), Spitzer's science discoveries will continue to inspire the world for many years to come.",
+      "published_at": "2020-01-15T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "hubble",
+        "chandra"
+      ],
+      "relevance_score": 18,
+      "why_it_matters": "Cross-mission signal; useful when a development connects multiple spacecraft, observatories, or science themes."
+    },
+    {
+      "title": "Webb opens a Treasure Chest filled with stars",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/08/Webb_opens_a_Treasure_Chest_filled_with_stars",
+      "summary": "Image: This NASA/ESA/CSA James Webb Space Telescope Picture of the Month takes us to a fantastical realm within our home galaxy , where piercing starlight and billowing winds sculpt dust clouds into inventive shapes. This scene is from the Carina Nebula, which lies just 7500 light-years away in the constellation Carina (the Keel). Spanning roughly 260 light-years, the nebula is home to an incredible collection of objects, including the Cosmic Cliffs revealed in the f irst-ever Webb image release . The Carina Nebula is also the nearest high-mass star-forming region that allows astronomers to study the full range of star formation. This nebula houses some of the most massive stars in our galaxy as well as tens of thousands of protostars, offering a valuable opportunity to understand how stars shape their neighbourhoods. The feature highlighted in today’s image, aptly called the Treasure Chest, looks right at home in this celestial sculpture garden. The Treasure Chest is what’s known as a cometary globule. A cometary globule is an isolated cloud of gas and dust with a dense, dark head and a sweeping tail. These clouds often somewhat resemble comets, but the Treasure Chest looks distinctly like a wooden chest with its lid wide open. However, this chest doesn’t contain jewels or gold coins, but instead a compact cluster of young stars. These stars are responsible for the otherworldly glow coming from within the Treasure Chest, revealed by Webb’s sensitive Near-Infrared Camera ( NIRCam ). Researchers estimate that the Treasure Chest’s cluster contains about 70 stars, the most massive of which is a rare O-type star roughly 19 times as massive as the Sun. The star cluster is likely around 1.3 million years old, though earlier estimates found it to be as young as just 100 000 years old. Because of its youth, the cluster is still deeply embedded within the dusty clouds of the Treasure Chest. The individual stars in the cluster are wrapped up in dust as well; astronomers have found evidence that many of these stars are surrounded by circumstellar discs. Over time, the brilliant starlight from these young stars will dissipate the surrounding cloud and reveal the entire cluster. The key to the Treasure Chest’s sculptural shape lies outside this image: just 39 light-years to the northwest, as measured on the sky, sits Eta Carinae, the most luminous object in the entire Carina Nebula. Eta Carinae is a star system containing at least two stars, one of which is 100 times as massive as the Sun. This star alone is about 5 million times as luminous as the Sun. Adding to this intense radiation is the nearby star cluster Trumpler 16, which also contains several extremely hot massive stars. With Webb, astronomers have carried out an observing programme (# 5408 ; PI: Reiter) dedicated to studying how young stars in the Carina Nebula collect gas from their surroundings and expel it through outflows. [Image Description: A region of space filled with bright stars and clouds of gas. In the centre, the densest clouds form the shape of a chest with its lid open. The chest appears to glow from within. At its base it breaks apart into long pillars of thick gas. Many of the gas clouds in the background are dark orange globules, while others form large, pale hazes. A few brightly shining stars lie in the foreground, the biggest and brightest in front of the chest’s lid.] Release on esawebb.org",
+      "published_at": "2026-08-06T08:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "webb"
+      ],
+      "relevance_score": 17,
+      "why_it_matters": "Relevant to webb; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Plato's electronics ready for space",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/07/Plato_s_electronics_ready_for_space",
+      "summary": "Image: The European Space Agency’s terrestrial planet hunter Plato &nbsp;has recently completed a series of key tests inside the Maxwell Test Chamber at ESTEC , demonstrating that its electronic equipment is fit to work in space. This photo captures the spacecraft standing inside the special chamber. The shielded enclosure features conducting metal walls, floor, and ceiling that form a Faraday cage, screening out all external interference. Its 9 m-high interior is lined floor to ceiling with foam spikes that absorb electrical signals and sounds to mimic the void of space. Once the chamber was sealed closed, engineers remotely switched on and commanded Plato’s electronic equipment. They ran a series of tests to ensure that the spacecraft’s complex instruments and modules did not interfere with each other or with the communication systems, creating unwanted ‘crosstalk’. In the extreme vacuum of space, a spacecraft’s electronics can behave differently than they do in a typical test lab on the ground. Without proper testing, this can have unforeseen consequences that could affect the mission’s goals or even damage the equipment. Thanks to the tests run in the Maxwell Test Chamber, engineers verified that Plato’s many electronic systems can work together in space without interference – in other words, that they are electromagnetically compatible. With compatibility checked off, Plato has now cleared the last remaining major exam in the series that the spacecraft must undertake to graduate for launch. The exams started back in January this year with vibration and acoustic tests , followed by a month-long stay inside the Large Space Simulator where Plato aced a demanding set of tests and demonstrated that it is fit to withstand the harsh conditions of space. Plato will lift off on an Ariane 6 . Its launch is planned by Arianespace for March 2027. [Image description: Photograph of a spacecraft towering at the centre of a large test chamber. The chamber's walls and ceiling are covered with dense rows of blue foam spikes that create a striking geometric pattern extending in all directions around the spacecraft. The right side of the spacecraft is dominated by shiny black, stowed, solar panels. The spacecraft body is partly visible on the left wrapped in reflective gold-coloured insulating foil and partially covered by a translucent protective sheet secured with small pieces of red tape.]",
+      "published_at": "2026-07-20T12:30:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "plato"
+      ],
+      "relevance_score": 17,
+      "why_it_matters": "Relevant to plato; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Webb reveals millions of stars in nearby galaxy",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Webb_reveals_millions_of_stars_in_nearby_galaxy",
+      "summary": "In new images from the NASA/ESA/CSA James Webb Space Telescope to celebrate its fourth science anniversary, a familiar galaxy transforms into something far richer, and far more complex, than ever seen before. Webb’s unprecedented sensitivity across near- and mid-infrared wavelengths cuts through the thick lanes of dust that obscure Centaurus A’s centre in visible light, showing a densely packed tapestry of individual stars and an active, everchanging galaxy. These images mark four years of better-than-anticipated performance and successful science operations for the most powerful space telescope in history.",
+      "published_at": "2026-07-06T16:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "webb"
+      ],
+      "relevance_score": 17,
+      "why_it_matters": "Relevant to webb; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Getting Perseverance to the Launch Pad",
+      "url": "https://www.jpl.nasa.gov/videos/getting-perseverance-to-the-launch-pad",
+      "summary": "In February 2020, NASA’s Perseverance Rover began its long journey to Mars by first traveling across the United States. The rover was built at NASA’s Jet Propulsion Laboratory in Southern California, and then carefully packed and flown to NASA’s Kennedy Space Center in Cape Canaveral, Florida. There, engineers integrated the rover with the spacecraft that carries it to Mars, and the Atlas V rocket chosen to send it on its way.",
+      "published_at": "2020-07-22T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 16,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "NASA’s Ingenuity Mars Helicopter: The First Aircraft on Mars",
+      "url": "https://www.jpl.nasa.gov/videos/nasas-ingenuity-mars-helicopter-the-first-aircraft-on-mars",
+      "summary": "NASA's Ingenuity Mars Helicopter will make history's first attempt at powered flight on another planet next spring. It is riding with the agency's next mission to Mars (the Mars 2020 Perseverance rover) as it launches from Cape Canaveral Air Force Station later this summer. Perseverance, with Ingenuity attached to its belly, will land on Mars February 18, 2021. As a technology demonstration, Ingenuity is testing a new capability for the first time: showing controlled flight is possible in the very thin Martian atmosphere. If successful, Ingenuity could lead to an aerial dimension to space exploration, aiding both robots and humans in the future. For more about Ingenuity, visit https://mars.nasa.gov/technology/helicopter/ Credit: NASA/JPL-Caltech",
+      "published_at": "2020-07-14T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 16,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Metallic waves on ancient Mars",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Metallic_waves_on_ancient_Mars",
+      "summary": "The European Space Agency’s Mars Express &nbsp;has spotted a swathe of metallic-looking waves filling Mars’s large Kaiser Crater – an ancient and otherworldly dune field sculpted by wind.",
+      "published_at": "2026-07-15T09:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "mars-orbiters"
+      ],
+      "relevance_score": 15,
+      "why_it_matters": "Relevant to mars orbiters; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Webb unveils young stars across every stage of formation",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/06/Webb_unveils_young_stars_across_every_stage_of_formation",
+      "summary": "Image: Webb unveils young stars across every stage of formation",
+      "published_at": "2026-06-05T08:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "webb"
+      ],
+      "relevance_score": 15,
+      "why_it_matters": "Relevant to webb; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Perseverance's Mastcam-Z Views Ingenuity's 47th Takeoff",
+      "url": "https://www.jpl.nasa.gov/videos/perseverances-mastcam-z-views-ingenuitys-47th-takeoff",
+      "summary": "March 14, 2023 NASA’s Ingenuity Mars Helicopter is seen here at the starting point of its 47th flight on Mars. This video shows the dust initially kicked up by the helicopter’s spinning rotors, as well as Ingenuity taking off, hovering, and beginning its 1,444-foot (440-meter) journey to the southwest. The rotorcraft landed – off camera – at Airfield “Iota.” NASA’s Jet Propulsion Laboratory, which is managed for NASA by Caltech in Pasadena, California, built and manages operations of the Perseverance rover. Arizona State University leads the operations of the Mastcam-Z instrument, working in collaboration with Malin Space Science Systems in San Diego, on the design, fabrication, testing, and operation of the cameras, and in collaboration with the Niels Bohr Institute of the University of Copenhagen on the design, fabrication, and testing of the calibration targets. The Ingenuity Mars Helicopter was built by JPL, which manages the project for NASA Headquarters. It is supported by NASA’s Science Mission Directorate. NASA’s Ames Research Center in California’s Silicon Valley and NASA’s Langley Research Center in Hampton, Virginia, provided significant flight performance analysis and technical assistance during Ingenuity’s development. AeroVironment Inc., Qualcomm, and SolAero also provided design assistance and major vehicle components. Lockheed Martin Space designed and manufactured the Mars Helicopter Delivery System . Credit NASA/JPL-Caltech/ASU/MSSS",
+      "published_at": "2023-03-17T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 14,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Perseverance Arrives at Mars: Feb. 18, 2021",
+      "url": "https://www.jpl.nasa.gov/videos/perseverance-arrives-at-mars-feb-18-2021",
+      "summary": "After nearly 300 million miles (470 million km), NASA’s Perseverance rover completes its journey to Mars on Feb. 18, 2021. But, to reach the surface of the Red Planet, it has to survive the harrowing final phase known as Entry, Descent, and Landing. Learn more: https://mars.nasa.gov/mars2020 Credit: NASA/JPL-Caltech",
+      "published_at": "2020-12-21T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 14,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Curiosity’s 1.8 Billion-Pixel Panorama on Mars",
+      "url": "https://www.jpl.nasa.gov/videos/curiositys-18-billion-pixel-panorama-on-mars",
+      "summary": "NASA Curiosity Project Scientist Ashwin Vasavada guides this tour of the rover's view of the Martian surface.",
+      "published_at": "2020-03-04T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "curiosity"
+      ],
+      "relevance_score": 14,
+      "why_it_matters": "Relevant to curiosity; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "NASA's New Planet Tracker, NEID",
+      "url": "https://www.jpl.nasa.gov/videos/nasas-new-planet-tracker-neid",
+      "summary": "A new NASA-funded planet-hunting instrument has been installed on the WIYN telescope, on Arizona's Kitt Peak. NEID (pronounced NOO-id) is a spectrometer that is one of the first instruments of its kind with the precision to detect small, terrestrial planets around nearby stars. NEID will also confirm the presence of planets discovered by NASA's TESS space telescope, and reveal details of their anatomy. Eventually, scientists want to be able to find Earth-like planets around Sun-like stars, in an effort to find a world with life on it.",
+      "published_at": "2020-01-08T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "tess"
+      ],
+      "relevance_score": 14,
+      "why_it_matters": "Relevant to tess; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "Landing NASA's Mars 2020 Rover with Terrain Relative Navigation",
+      "url": "https://www.jpl.nasa.gov/videos/landing-nasas-mars-2020-rover-with-terrain-relative-navigation",
+      "summary": "The Mars 2020 mission is facing the most challenging landing yet on the Red Planet. It will touch down on Feb. 18, 2021, in Jezero Crater, a 28-mile-wide (45-kilometer-wide) expanse full of steep cliffs, boulder fields and other things that could boobytrap the landing. A new technology called Terrain Relative Navigation (TRN) will allow the spacecraft to avoid hazards autonomously.",
+      "published_at": "2019-07-01T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 14,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "NASA’s Curiosity Finds Climate Clues on a Martian Mountain",
+      "url": "https://www.jpl.nasa.gov/videos/nasas-curiosity-finds-climate-clues-on-a-martian-mountain",
+      "summary": "After spending the better part of a year exploring Mars' Vera Rubin Ridge, NASA's Curiosity Mars rover has moved to a new part of Mount Sharp. Project Scientist Ashwin Vasavada gives a tour of the rover's new home in the \"clay unit,\" as well as other areas scientists are excited to visit.",
+      "published_at": "2019-05-15T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "curiosity"
+      ],
+      "relevance_score": 14,
+      "why_it_matters": "Relevant to curiosity; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "NASA Chopper Ready for a Spin on Mars",
+      "url": "https://www.jpl.nasa.gov/videos/nasa-chopper-ready-for-a-spin-on-mars",
+      "summary": "Can we fly on Mars? The laws of physics may say it's near impossible, but actually flying a heavier-than-air vehicle on the Red Planet is much harder than that. NASA’s Mars 2020 mission will deliver a technology demonstration that will put the idea to the test -- a helicopter that will perform controlled flight on Mars.",
+      "published_at": "2019-06-06T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 12,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    {
+      "title": "What's Up - April 2020",
+      "url": "https://www.jpl.nasa.gov/videos/whats-up-april-2020",
+      "summary": "What are some astronomy highlights in the sky in April 2020? This month, Venus visits the Pleiades; Mars, Jupiter and Saturn begin their breakup; and we ask, \"What is the Moon illusion?\" Additional information about topics covered in this episode of What's Up, along with still images from the video, and the video transcript, are available at https://solarsystem.nasa.gov/whats-up-skywatching-tips-from-nasa",
+      "published_at": "2020-03-31T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 10,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "Total solar eclipse: how to watch live from home",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Total_solar_eclipse_how_to_watch_live_from_home",
+      "summary": "A total solar eclipse is coming to Europe. The European Space Agency (ESA) will broadcast live from 19:30 CEST on 12 August, allowing you to experience this rare event from anywhere in the world. Quick links: -&nbsp; Live ESA broadcast on YouTube (12 August, 19:30–20:45 CEST)&nbsp; - Live telescope feed on YouTube (12 August, 19:30–20:45 CEST) -&nbsp; Event programme in León, Spain (12 August, 10:00–14:00 and 17:30–21:45 CEST) -&nbsp; Overview of all ESA eclipse activities & resources",
+      "published_at": "2026-08-05T08:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 9,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "Expedition Sound podcast series",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Expedition_Sound_podcast_series",
+      "summary": "Expedition Sound is a podcast series by the European Space Agency (ESA) in which you’re invited to explore the Universe through your ears. Guided by sonifications – the translation of data into sound – host Zsófi Szalavári travels from our Sun out into the depths of space to uncover what the space telescopes of ESA’s science missions teach us about the Universe.",
+      "published_at": "2026-07-16T11:30:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 9,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "Smile reaches science orbit",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/06/Smile_reaches_science_orbit",
+      "summary": "Image: Smile reaches science orbit",
+      "published_at": "2026-06-25T08:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 9,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "NISAR: Watching the Earth Move Under Our Feet",
+      "url": "https://www.jpl.nasa.gov/videos/nisar-watching-the-earth-move-under-our-feet",
+      "summary": "The joint U.S.-Indian NISAR satellite mission will use radar to observe a wide range of Earth processes, from the flow rates of glaciers and ice sheets to the dynamics of earthquakes and volcanos. NISAR can image Earth’s land masses at night and through clouds and will allow scientists to see places that have otherwise been obscured. Despite the challenges of working during the Coronavirus pandemic, the science and engineering teams on both sides of the pond are determined to meet their mission objectives. The NASA-ISRO Synthetic Aperture Radar (NISAR) satellite mission NISAR is scheduled to launch no earlier than 2022 from India’s Satish Dhawan Space Center in Sriharikota, India. For up-to-date information on the NISAR mission and launch please visit nisar.jpl.nasa.gov .",
+      "published_at": "2020-12-17T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 8,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "What's Up - March 2020",
+      "url": "https://www.jpl.nasa.gov/videos/whats-up-march-2020",
+      "summary": "Looking for astronomy highlights for March 2020? This month, early risers enjoy a planetary grouping of Mars, Jupiter and Saturn in the early morning sky. Plus a closer look at Sirius, the brightest star in the sky, and spot a lovely trio at sunset on March 28th.",
+      "published_at": "2020-03-02T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 8,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "What's Up - February 2020",
+      "url": "https://www.jpl.nasa.gov/videos/whats-up-february-2020",
+      "summary": "Looking for astronomy highlights for February 2020? This month is the best time of the year to try to view Mercury, soon after sunset; Mars disappears behind the Moon on Feb. 18; and the bright red star on Orion’s shoulder, Betelgeuse, has been acting weird. (Or has it?) Additional information about topics covered in this episode of What's Up, along with still images from the video, and the video transcript, are available at https://solarsystem.nasa.gov/whats-up-skywatching-tips-from-nasa.",
+      "published_at": "2020-02-04T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 8,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "What's Up - June 2019",
+      "url": "https://www.jpl.nasa.gov/videos/whats-up-june-2019",
+      "summary": "What's up in the June sky? Jupiter is at its biggest and brightest, Mercury and Mars appear ultra-close and how you can observe the Moon's tilted orbit.",
+      "published_at": "2019-05-31T07:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 8,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "NASA’s SkyFall Helicopters at Work (Artist’s Concept)",
+      "url": "https://science.nasa.gov/photojournal/nasas-skyfall-helicopters-at-work-artists-concept/",
+      "summary": "Description This artist’s concept depicts NASA’s three SkyFall Mars helicopters collecting data while flying over the surface of the Red Planet. The green frequency waves emanating from the helicopters’ large antennas depict collection of subsurface radar data. The red beams depict collect near-infrared imagery data from regolith (crushed rock and dust) and other surface features. […]",
+      "published_at": "2026-08-06T18:06:07Z",
+      "source_id": "nasa-recent",
+      "source_label": "NASA Recently Published",
+      "agency": "NASA",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 7,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    },
+    {
+      "title": "How to safely watch a solar eclipse",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/07/How_to_safely_watch_a_solar_eclipse",
+      "summary": "Video: 00:01:34 [English]: A solar eclipse is an unforgettable sight, but only if you watch it safely! ESA reserve astronaut Sara García Alonso shows you how to enjoy this incredible cosmic event using certified eclipse glasses and explains why ordinary sunglasses are not enough. Learn what happens during the different stages of an eclipse, when it is safe to look up, and how to experience one of the greatest shows in the Solar System without risking your eyes. [Spanish]: Un eclipse solar es un espectáculo inolvidable, ¡pero solo si lo observas de forma Segura! El astronauta de reserva de la ESA Pablo Álvarez Fernández te explica cómo disfrutar de este increíble fenómeno cósmico utilizando gafas de eclipse certificadas y por qué unas gafas de sol normales no son suficientes. Descubre qué ocurre durante las distintas fases de un eclipse, cuándo es seguro mirar al Sol y cómo disfrutar de uno de los mayores espectáculos del Sistema Solar sin poner en Riesgo tu vista.",
+      "published_at": "2026-07-31T14:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [],
+      "relevance_score": 7,
+      "why_it_matters": "Worth scanning because it appeared in a primary mission/science source; verify its mission relevance before promoting it to the main board."
+    }
+  ],
+  "mission_updates": {
+    "psyche": {
+      "title": "ESA’s Mars Express meets NASA’s Psyche",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/07/ESA_s_Mars_Express_meets_NASA_s_Psyche",
+      "summary": "Image: Mars Express image",
+      "published_at": "2026-07-17T16:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "psyche",
+        "mars-orbiters"
+      ],
+      "relevance_score": 23,
+      "why_it_matters": "Cross-mission signal; useful when a development connects multiple spacecraft, observatories, or science themes."
+    },
+    "mars-orbiters": {
+      "title": "ESA’s Mars Express meets NASA’s Psyche",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/07/ESA_s_Mars_Express_meets_NASA_s_Psyche",
+      "summary": "Image: Mars Express image",
+      "published_at": "2026-07-17T16:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "psyche",
+        "mars-orbiters"
+      ],
+      "relevance_score": 23,
+      "why_it_matters": "Cross-mission signal; useful when a development connects multiple spacecraft, observatories, or science themes."
+    },
+    "euclid": {
+      "title": "Thousands of planets are hidden in this photo",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/06/Thousands_of_planets_are_hidden_in_this_photo",
+      "summary": "Video: 00:10:45 Millions of stars. Thousands of hidden worlds. One unprecedented view of our galaxy. Three years since launch , ESA’s Euclid space telescope reveals the Milky Way galaxy’s centre in extraordinary detail: a mosaic of tens of millions of stars captured in just 26 hours.But this is more than an image. It is a map of stellar evolution, from dark clouds where stars are being born to ancient populations packed into the galactic bulge. And hidden within this dense field of light are planets we cannot see directly. Through gravitational microlensing, astronomers detect distant worlds by measuring tiny, temporary changes in light as stars pass in front of one another, revealing planets and even their masses through gravity alone. Euclid, originally built to explore dark matter and dark energy, is now helping open a new window on our own galaxy, and the unseen worlds within it.",
+      "published_at": "2026-07-01T08:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "euclid"
+      ],
+      "relevance_score": 19,
+      "why_it_matters": "Relevant to euclid; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    "perseverance": {
+      "title": "Perseverance’s Sample Tubes Ready for Mars",
+      "url": "https://www.jpl.nasa.gov/videos/perseverances-sample-tubes-ready-for-mars",
+      "summary": "One key activity for NASA's Perseverance Mars rover, which is on its way to the Red Planet, will be to collect samples of Martian rock and regolith (broken rock and dust) for future return to Earth. Because scientists want to be confident that any signs of ancient life they might observe in samples returned to Earth are from Mars, not Earth, Perseverance's Sample Caching System -- including the tubes the samples go in -- had to be the cleanest set of components humankind has ever launched into space. NASA’s Jet Propulsion Laboratory met the challenge. A future mission, which involves a collaboration between NASA and the European Space Agency, will return the samples to Earth. The Perseverance rover is set to land on the surface of Mars on February 18, 2021. For more information on the mission, visit: https://mars.nasa.gov/perseverance/ Credit: NASA/JPL-Caltech",
+      "published_at": "2020-12-22T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "perseverance"
+      ],
+      "relevance_score": 18,
+      "why_it_matters": "Relevant to perseverance; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    "hubble": {
+      "title": "NASA's Spitzer Space Telescope: Unveiling the Universe",
+      "url": "https://www.jpl.nasa.gov/videos/nasas-spitzer-space-telescope-unveiling-the-universe",
+      "summary": "After 16 years of unveiling the infrared universe, NASA's Spitzer Space Telescope has left a singular legacy. As one of NASA’s four Great Observatories -- a series of powerful telescopes including Hubble, Chandra and Compton that can observe the cosmos in different parts of the electromagnetic spectrum --Spitzer quickly became a pioneer in the exploration of the worlds beyond our human vision. From stars being born to planets beyond our solar system (like the seven Earth-size planets around the star TRAPPIST-1), Spitzer's science discoveries will continue to inspire the world for many years to come.",
+      "published_at": "2020-01-15T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "hubble",
+        "chandra"
+      ],
+      "relevance_score": 18,
+      "why_it_matters": "Cross-mission signal; useful when a development connects multiple spacecraft, observatories, or science themes."
+    },
+    "chandra": {
+      "title": "NASA's Spitzer Space Telescope: Unveiling the Universe",
+      "url": "https://www.jpl.nasa.gov/videos/nasas-spitzer-space-telescope-unveiling-the-universe",
+      "summary": "After 16 years of unveiling the infrared universe, NASA's Spitzer Space Telescope has left a singular legacy. As one of NASA’s four Great Observatories -- a series of powerful telescopes including Hubble, Chandra and Compton that can observe the cosmos in different parts of the electromagnetic spectrum --Spitzer quickly became a pioneer in the exploration of the worlds beyond our human vision. From stars being born to planets beyond our solar system (like the seven Earth-size planets around the star TRAPPIST-1), Spitzer's science discoveries will continue to inspire the world for many years to come.",
+      "published_at": "2020-01-15T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "hubble",
+        "chandra"
+      ],
+      "relevance_score": 18,
+      "why_it_matters": "Cross-mission signal; useful when a development connects multiple spacecraft, observatories, or science themes."
+    },
+    "webb": {
+      "title": "Webb opens a Treasure Chest filled with stars",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/08/Webb_opens_a_Treasure_Chest_filled_with_stars",
+      "summary": "Image: This NASA/ESA/CSA James Webb Space Telescope Picture of the Month takes us to a fantastical realm within our home galaxy , where piercing starlight and billowing winds sculpt dust clouds into inventive shapes. This scene is from the Carina Nebula, which lies just 7500 light-years away in the constellation Carina (the Keel). Spanning roughly 260 light-years, the nebula is home to an incredible collection of objects, including the Cosmic Cliffs revealed in the f irst-ever Webb image release . The Carina Nebula is also the nearest high-mass star-forming region that allows astronomers to study the full range of star formation. This nebula houses some of the most massive stars in our galaxy as well as tens of thousands of protostars, offering a valuable opportunity to understand how stars shape their neighbourhoods. The feature highlighted in today’s image, aptly called the Treasure Chest, looks right at home in this celestial sculpture garden. The Treasure Chest is what’s known as a cometary globule. A cometary globule is an isolated cloud of gas and dust with a dense, dark head and a sweeping tail. These clouds often somewhat resemble comets, but the Treasure Chest looks distinctly like a wooden chest with its lid wide open. However, this chest doesn’t contain jewels or gold coins, but instead a compact cluster of young stars. These stars are responsible for the otherworldly glow coming from within the Treasure Chest, revealed by Webb’s sensitive Near-Infrared Camera ( NIRCam ). Researchers estimate that the Treasure Chest’s cluster contains about 70 stars, the most massive of which is a rare O-type star roughly 19 times as massive as the Sun. The star cluster is likely around 1.3 million years old, though earlier estimates found it to be as young as just 100 000 years old. Because of its youth, the cluster is still deeply embedded within the dusty clouds of the Treasure Chest. The individual stars in the cluster are wrapped up in dust as well; astronomers have found evidence that many of these stars are surrounded by circumstellar discs. Over time, the brilliant starlight from these young stars will dissipate the surrounding cloud and reveal the entire cluster. The key to the Treasure Chest’s sculptural shape lies outside this image: just 39 light-years to the northwest, as measured on the sky, sits Eta Carinae, the most luminous object in the entire Carina Nebula. Eta Carinae is a star system containing at least two stars, one of which is 100 times as massive as the Sun. This star alone is about 5 million times as luminous as the Sun. Adding to this intense radiation is the nearby star cluster Trumpler 16, which also contains several extremely hot massive stars. With Webb, astronomers have carried out an observing programme (# 5408 ; PI: Reiter) dedicated to studying how young stars in the Carina Nebula collect gas from their surroundings and expel it through outflows. [Image Description: A region of space filled with bright stars and clouds of gas. In the centre, the densest clouds form the shape of a chest with its lid open. The chest appears to glow from within. At its base it breaks apart into long pillars of thick gas. Many of the gas clouds in the background are dark orange globules, while others form large, pale hazes. A few brightly shining stars lie in the foreground, the biggest and brightest in front of the chest’s lid.] Release on esawebb.org",
+      "published_at": "2026-08-06T08:00:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "webb"
+      ],
+      "relevance_score": 17,
+      "why_it_matters": "Relevant to webb; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    "plato": {
+      "title": "Plato's electronics ready for space",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/07/Plato_s_electronics_ready_for_space",
+      "summary": "Image: The European Space Agency’s terrestrial planet hunter Plato &nbsp;has recently completed a series of key tests inside the Maxwell Test Chamber at ESTEC , demonstrating that its electronic equipment is fit to work in space. This photo captures the spacecraft standing inside the special chamber. The shielded enclosure features conducting metal walls, floor, and ceiling that form a Faraday cage, screening out all external interference. Its 9 m-high interior is lined floor to ceiling with foam spikes that absorb electrical signals and sounds to mimic the void of space. Once the chamber was sealed closed, engineers remotely switched on and commanded Plato’s electronic equipment. They ran a series of tests to ensure that the spacecraft’s complex instruments and modules did not interfere with each other or with the communication systems, creating unwanted ‘crosstalk’. In the extreme vacuum of space, a spacecraft’s electronics can behave differently than they do in a typical test lab on the ground. Without proper testing, this can have unforeseen consequences that could affect the mission’s goals or even damage the equipment. Thanks to the tests run in the Maxwell Test Chamber, engineers verified that Plato’s many electronic systems can work together in space without interference – in other words, that they are electromagnetically compatible. With compatibility checked off, Plato has now cleared the last remaining major exam in the series that the spacecraft must undertake to graduate for launch. The exams started back in January this year with vibration and acoustic tests , followed by a month-long stay inside the Large Space Simulator where Plato aced a demanding set of tests and demonstrated that it is fit to withstand the harsh conditions of space. Plato will lift off on an Ariane 6 . Its launch is planned by Arianespace for March 2027. [Image description: Photograph of a spacecraft towering at the centre of a large test chamber. The chamber's walls and ceiling are covered with dense rows of blue foam spikes that create a striking geometric pattern extending in all directions around the spacecraft. The right side of the spacecraft is dominated by shiny black, stowed, solar panels. The spacecraft body is partly visible on the left wrapped in reflective gold-coloured insulating foil and partially covered by a translucent protective sheet secured with small pieces of red tape.]",
+      "published_at": "2026-07-20T12:30:00Z",
+      "source_id": "esa-space-science",
+      "source_label": "ESA Space Science",
+      "agency": "ESA",
+      "source_kind": "rss",
+      "mission_ids": [
+        "plato"
+      ],
+      "relevance_score": 17,
+      "why_it_matters": "Relevant to plato; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    "curiosity": {
+      "title": "Curiosity’s 1.8 Billion-Pixel Panorama on Mars",
+      "url": "https://www.jpl.nasa.gov/videos/curiositys-18-billion-pixel-panorama-on-mars",
+      "summary": "NASA Curiosity Project Scientist Ashwin Vasavada guides this tour of the rover's view of the Martian surface.",
+      "published_at": "2020-03-04T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "curiosity"
+      ],
+      "relevance_score": 14,
+      "why_it_matters": "Relevant to curiosity; check whether this changes status, imagery, science interpretation, or the next milestone."
+    },
+    "tess": {
+      "title": "NASA's New Planet Tracker, NEID",
+      "url": "https://www.jpl.nasa.gov/videos/nasas-new-planet-tracker-neid",
+      "summary": "A new NASA-funded planet-hunting instrument has been installed on the WIYN telescope, on Arizona's Kitt Peak. NEID (pronounced NOO-id) is a spectrometer that is one of the first instruments of its kind with the precision to detect small, terrestrial planets around nearby stars. NEID will also confirm the presence of planets discovered by NASA's TESS space telescope, and reveal details of their anatomy. Eventually, scientists want to be able to find Earth-like planets around Sun-like stars, in an effort to find a world with life on it.",
+      "published_at": "2020-01-08T08:00:00Z",
+      "source_id": "jpl-podcasts",
+      "source_label": "JPL Podcasts",
+      "agency": "JPL",
+      "source_kind": "rss",
+      "mission_ids": [
+        "tess"
+      ],
+      "relevance_score": 14,
+      "why_it_matters": "Relevant to tess; check whether this changes status, imagery, science interpretation, or the next milestone."
+    }
+  },
+  "source_status": [
+    {
+      "id": "nasa-recent",
+      "label": "NASA Recently Published",
+      "agency": "NASA",
+      "url": "https://www.nasa.gov/feed/",
+      "ok": true,
+      "items": 10,
+      "tls_fallback": false,
+      "elapsed_ms": 201
+    },
+    {
+      "id": "nasa-science-news",
+      "label": "NASA Science News",
+      "agency": "NASA Science",
+      "url": "https://science.nasa.gov/science-news/",
+      "ok": true,
+      "items": 35,
+      "tls_fallback": false,
+      "elapsed_ms": 219
+    },
+    {
+      "id": "nasa-science-blogs",
+      "label": "NASA Science Blog",
+      "agency": "NASA Science",
+      "url": "https://science.nasa.gov/blogs/science-news/",
+      "ok": true,
+      "items": 35,
+      "tls_fallback": false,
+      "elapsed_ms": 203
+    },
+    {
+      "id": "jpl-news",
+      "label": "JPL News",
+      "agency": "JPL",
+      "url": "https://www.jpl.nasa.gov/feeds/news/",
+      "ok": false,
+      "items": 0,
+      "error": "not well-formed (invalid token): line 2, column 1390",
+      "elapsed_ms": 1229
+    },
+    {
+      "id": "jpl-podcasts",
+      "label": "JPL Podcasts",
+      "agency": "JPL",
+      "url": "https://www.jpl.nasa.gov/feeds/podcasts/",
+      "ok": true,
+      "items": 40,
+      "tls_fallback": true,
+      "elapsed_ms": 2500
+    },
+    {
+      "id": "esa-space-science",
+      "label": "ESA Space Science",
+      "agency": "ESA",
+      "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+      "ok": true,
+      "items": 15,
+      "tls_fallback": false,
+      "elapsed_ms": 278
+    },
+    {
+      "id": "esa-science-tech",
+      "label": "ESA Science & Technology",
+      "agency": "ESA",
+      "url": "https://sci.esa.int/newssyndication/rss/sciweb.xml",
+      "ok": false,
+      "items": 0,
+      "error": "mismatched tag: line 905, column 2",
+      "elapsed_ms": 2563
+    },
+    {
+      "id": "cneos-news",
+      "label": "NASA CNEOS News",
+      "agency": "NASA/JPL",
+      "url": "https://cneos.jpl.nasa.gov/news/",
+      "ok": true,
+      "items": 5,
+      "tls_fallback": true,
+      "elapsed_ms": 206
+    }
+  ],
+  "note": "Source-ranked daily snapshot from official NASA, JPL, and ESA feeds/pages. Community/video links remain discovery links, not sources of fact."
+}
