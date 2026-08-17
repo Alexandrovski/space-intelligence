@@ -22,8 +22,8 @@ main{padding:18px 22px 60px;max-width:1600px;width:100%;margin:auto}
 .topbar{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .kicker{font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
 h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
-.ticker{margin:14px 0;border:1px solid var(--line);background:var(--panel);padding:10px 12px;display:flex;gap:24px;overflow:auto;white-space:nowrap;font-size:12px}
-.ticker b{color:var(--amber)}.ticker span{color:#b7c2cf}
+.ticker{margin:14px 0;border:1px solid var(--line);background:var(--panel);display:flex;overflow:auto;white-space:nowrap;font-size:12px}
+.ticker-item{display:inline-flex;align-items:center;gap:5px;padding:10px 12px;border-right:1px solid #202a36;color:#b7c2cf;transition:background .15s ease,color .15s ease}.ticker-item:last-child{border-right:0}.ticker-item b{color:var(--amber)}.ticker-item .out{color:#637184;font-size:10px}.ticker-item:hover{background:#121a24;color:var(--text);text-decoration:none}.ticker-item:hover .out{color:var(--accent)}.ticker-item:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:14px}
 .metric{grid-column:span 3}.metric .v{font-size:24px;font-weight:750;margin-top:8px}.metric .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
@@ -41,7 +41,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
 .where-main{min-width:0}.map-actions{display:flex;gap:7px;flex-wrap:wrap}.where-strip{display:grid;grid-template-columns:repeat(7,minmax(120px,1fr));gap:8px;min-height:560px}.zone{border:1px solid #253345;border-radius:8px;background:#0a0f15;display:flex;flex-direction:column;min-width:0}.zone-head{padding:10px;border-bottom:1px solid #202a36}.zone-head .label{font-size:10px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}.zone-head .range{font-size:10px;color:var(--muted);margin-top:3px}.zone-body{padding:8px;display:flex;flex-direction:column;gap:7px;min-height:0}.mission-pill{width:100%;border:1px solid #2b3949;border-radius:6px;background:#0d131b;color:#dce6f0;padding:7px;text-align:left;font:inherit;font-size:11px;line-height:1.25;cursor:pointer}.mission-pill:hover,.mission-pill.on{border-color:#5786a0;background:#10202b}.mission-pill .dist{display:block;margin-top:3px;color:#98a6b7;font-size:10px}.mission-pill .dot{display:inline-block;width:7px;height:7px;border-radius:999px;margin-right:5px}.dot.horizons{background:#7dd3fc}.dot.anchored{background:#66e3a4}.dot.pipeline{background:#ffc66d}.dot.schematic{background:#d9c8ff}.is-hidden{display:none}.scale-note{font-size:10px;color:var(--muted);line-height:1.45}
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}.chip{font-size:11px;border:1px solid var(--line);padding:6px 8px;border-radius:999px;color:var(--muted);cursor:pointer;background:#0c1118}.chip.on{background:#132230;color:var(--accent);border-color:#244d67}
 .missions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.mission{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;min-height:430px}
+.mission{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;min-height:430px;scroll-margin-top:84px;transition:border-color .2s ease,box-shadow .2s ease}
 .mission>.media{height:176px;background:#05080c;position:relative;overflow:hidden}
 .mission>.media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.08) contrast(1.06)}
 .mission>.media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,12,.02),rgba(5,8,12,.12) 45%,rgba(5,8,12,.82))}
@@ -53,7 +53,8 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
 .ai{font-size:12px;line-height:1.45;color:#c1ccd8;background:#0a0f15;border-left:2px solid #35536b;padding:9px 10px}
 .links{display:flex;gap:6px;flex-wrap:wrap;align-items:flex-start;align-content:flex-start;margin-top:auto}.btn{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-height:25px;line-height:1;font-size:10px;border:1px solid #2d3a49;border-radius:5px;padding:6px 7px;color:#cbd6e2;background:#0b1118;white-space:nowrap}.btn.primary{border-color:#2f627e;color:var(--accent)}.btn.media{border-color:#6d562c;color:#ffd89a}.btn.community{border-color:#5b4b78;color:#d9c8ff}
 .projects{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.project{background:var(--panel);border:1px solid #3c3120;border-radius:8px;padding:13px;display:flex;flex-direction:column;gap:10px;min-height:250px}
+.project{background:var(--panel);border:1px solid #3c3120;border-radius:8px;padding:13px;display:flex;flex-direction:column;gap:10px;min-height:250px;scroll-margin-top:84px;transition:border-color .2s ease,box-shadow .2s ease}
+.mission.is-target,.project.is-target{border-color:var(--accent);box-shadow:0 0 0 1px rgba(99,211,255,.62),0 0 28px rgba(99,211,255,.12)}
 .project .stage{font-size:10px;color:#ffd89a;letter-spacing:.1em;text-transform:uppercase}
 .project .name{font-size:15px}.project .desc{font-size:12px;color:#b3beca;line-height:1.45}
 .project .stats{grid-template-columns:1fr}.project .ai{border-left-color:#7c5a28;background:#100e0b}
@@ -146,14 +147,14 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
   </div>
 
   <div class="ticker" id="ticker">
-    <span><b>LUCY</b> Camera tests underway ahead of 2027 Trojan flybys</span>
-    <span><b>WEBB</b> Third planet identified in Beta Pictoris system</span>
-    <span><b>EUCLID</b> Dark-universe survey producing wide-field cosmic maps</span>
-    <span><b>SOLAR ORBITER</b> Close solar passes complement Parker's in-situ sampling</span>
-    <span><b>PERSEVERANCE</b> Passed a marathon of surface driving on Mars</span>
-    <span><b>OSIRIS-APEX</b> En route to Apophis after Bennu sample return</span>
-    <span><b>PSYCHE</b> Mars gravity assist complete; asteroid arrival 2029</span>
-    <span><b>PARKER</b> 28th close solar pass completed at 3.8M mi from surface</span>
+    <a class="ticker-item" href="https://science.nasa.gov/blogs/lucy/2026/08/06/nasas-lucy-begins-camera-tests-ahead-of-2027-trojan-flybys/" target="_blank" rel="noreferrer"><b>LUCY</b> Camera tests underway ahead of 2027 Trojan flybys <span class="out">↗</span></a>
+    <a class="ticker-item" href="https://science.nasa.gov/missions/webb/nasas-webb-discovers-hidden-planet-in-famous-star-system/" target="_blank" rel="noreferrer"><b>WEBB</b> Third planet identified in Beta Pictoris system <span class="out">↗</span></a>
+    <a class="ticker-item" href="https://www.esa.int/ESA_Multimedia/Videos/2026/06/Thousands_of_planets_are_hidden_in_this_photo" target="_blank" rel="noreferrer"><b>EUCLID</b> Dark-universe survey producing wide-field cosmic maps <span class="out">↗</span></a>
+    <a class="ticker-item" href="https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter" target="_blank" rel="noreferrer"><b>SOLAR ORBITER</b> Close solar passes complement Parker's in-situ sampling <span class="out">↗</span></a>
+    <a class="ticker-item" href="https://science.nasa.gov/mission/mars-2020-perseverance/science-updates/" target="_blank" rel="noreferrer"><b>PERSEVERANCE</b> Passed a marathon of surface driving on Mars <span class="out">↗</span></a>
+    <a class="ticker-item" href="https://science.nasa.gov/mission/osiris-apex/" target="_blank" rel="noreferrer"><b>OSIRIS-APEX</b> En route to Apophis after Bennu sample return <span class="out">↗</span></a>
+    <a class="ticker-item" href="https://science.nasa.gov/photojournal/the-growing-crescent-of-mars-as-nasas-psyche-mission-approaches/" target="_blank" rel="noreferrer"><b>PSYCHE</b> Mars gravity assist complete; asteroid arrival 2029 <span class="out">↗</span></a>
+    <a class="ticker-item" href="https://science.nasa.gov/blogs/parker-solar-probe/2026/06/11/parker-solar-probe-makes-28th-close-pass-of-sun/" target="_blank" rel="noreferrer"><b>PARKER</b> 28th close solar pass completed at 3.8M mi from surface <span class="out">↗</span></a>
   </div>
 
   <div class="grid">
@@ -204,7 +205,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
   </div>
 
   <div class="missions">
-    <article class="mission mars" data-type="surface">
+    <article class="mission mars" data-type="surface" data-mission-id="perseverance">
       <div class="media">
         <img src="assets/images/perseverance-phobos.jpg" alt="Perseverance Mastcam-Z image of Phobos crossing the Sun from Mars"/>
         <div class="tag">MISSION IMAGE</div>
@@ -224,7 +225,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="observatory" id="observatories">
+    <article class="mission deep" data-type="observatory" data-mission-id="webb" id="observatories">
       <div class="media">
         <img src="assets/images/webb-beta-pictoris.jpg" alt="Webb Beta Pictoris system image and exoplanet concept"/>
         <div class="tag">LATEST RELEASE</div>
@@ -244,7 +245,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="frontier">
+    <article class="mission deep" data-type="frontier" data-mission-id="voyager-1">
       <div class="media">
         <img src="assets/images/voyager-pale-blue-dot.jpg" alt="Voyager 1 Pale Blue Dot image showing Earth as a tiny point of light"/>
         <div class="tag">ICONIC DATA</div>
@@ -263,7 +264,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="frontier">
+    <article class="mission deep" data-type="frontier" data-mission-id="new-horizons">
       <div class="media">
         <img src="assets/images/new-horizons-pluto.jpg" alt="New Horizons enhanced color global image of Pluto"/>
         <div class="tag">HISTORIC FLYBY</div>
@@ -277,7 +278,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission sun" data-type="cruise">
+    <article class="mission sun" data-type="cruise" data-mission-id="parker">
       <div class="media">
         <img src="assets/images/parker-solar-probe.jpg" alt="Parker Solar Probe mission visualization near the Sun"/>
         <div class="tag">SOLAR ENCOUNTER</div>
@@ -296,7 +297,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="cruise">
+    <article class="mission deep" data-type="cruise" data-mission-id="europa-clipper">
       <div class="media">
         <img src="assets/images/europa-clipper-first-images.jpg" alt="Europa Clipper first star-field images from onboard star trackers"/>
         <div class="tag">FIRST ONBOARD IMAGE</div>
@@ -315,7 +316,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="cruise">
+    <article class="mission deep" data-type="cruise" data-mission-id="juice">
       <div class="media">
         <img src="assets/images/juice-moon.jpg" alt="JUICE monitoring camera view of the Moon during lunar-Earth flyby"/>
         <div class="tag">FLYBY IMAGE</div>
@@ -334,7 +335,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="cruise">
+    <article class="mission deep" data-type="cruise" data-mission-id="psyche">
       <div class="media">
         <img src="assets/images/psyche-mars.png" alt="Psyche spacecraft crescent Mars image sequence during gravity assist approach"/>
         <div class="tag">GRAVITY ASSIST</div>
@@ -353,7 +354,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="cruise">
+    <article class="mission deep" data-type="cruise" data-mission-id="lucy">
       <div class="media">
         <img src="assets/images/lucy-dinkinesh.gif" alt="Lucy image sequence of binary asteroid Dinkinesh"/>
         <div class="tag">ASTEROID IMAGE</div>
@@ -372,7 +373,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="observatory">
+    <article class="mission deep" data-type="observatory" data-mission-id="hubble">
       <div class="media">
         <img src="assets/images/hubble-trifid.jpg" alt="Hubble image of young stars and dust in the Trifid Nebula"/>
         <div class="tag">ANNIVERSARY IMAGE</div>
@@ -386,7 +387,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission mars" data-type="surface">
+    <article class="mission mars" data-type="surface" data-mission-id="curiosity">
       <div class="media">
         <img src="assets/images/curiosity-panorama.jpg" alt="Curiosity rover panoramic view across Mars terrain"/>
         <div class="tag">SURFACE PANORAMA</div>
@@ -400,7 +401,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="frontier">
+    <article class="mission deep" data-type="frontier" data-mission-id="voyager-2">
       <div class="media">
         <img src="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia01/pia01492/PIA01492.jpg" alt="Voyager 2 image of Neptune with the Great Dark Spot"/>
         <div class="tag">OUTER PLANET FLYBY</div>
@@ -419,7 +420,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="observatory">
+    <article class="mission deep" data-type="observatory" data-mission-id="euclid">
       <div class="media">
         <img src="https://assets.media-platform.com/bi/dist/images/2023/11/09/654a96793cc84b4dfafe1390.jpg" alt="Euclid wide-field image filled with galaxies"/>
         <div class="tag">DARK UNIVERSE SURVEY</div>
@@ -438,7 +439,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission sun" data-type="cruise">
+    <article class="mission sun" data-type="cruise" data-mission-id="solar-orbiter">
       <div class="media">
         <img src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/ED7A/production/_123949706_esasun.jpg" alt="Solar Orbiter close image of the Sun"/>
         <div class="tag">SOLAR POLAR VIEW</div>
@@ -457,7 +458,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="cruise">
+    <article class="mission deep" data-type="cruise" data-mission-id="bepicolombo">
       <div class="media">
         <img src="https://media.es.wired.com/photos/66a0148f96d8b492fa9f924e/16%3A9/w_2560%2Cc_limit/MERCURIO%2520BEPICOLOMBI.jpg" alt="BepiColombo image of Mercury during a flyby"/>
         <div class="tag">MERCURY FLYBY</div>
@@ -476,7 +477,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="cruise">
+    <article class="mission deep" data-type="cruise" data-mission-id="osiris-apex">
       <div class="media">
         <img src="https://cdn.mos.cms.futurecdn.net/U4BCcUsMp2U26HHjPvnUjX.jpg" alt="OSIRIS-APEX spacecraft near asteroid Apophis artist rendering"/>
         <div class="tag">APOPHIS-BOUND</div>
@@ -495,7 +496,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="observatory">
+    <article class="mission deep" data-type="observatory" data-mission-id="tess">
       <div class="media">
         <img src="https://scitechdaily.com/images/TESS-Southern-Mosaic-Candidate-Exoplanets.jpg" alt="TESS southern sky mosaic with exoplanet candidates marked"/>
         <div class="tag">EXOPLANET SURVEY</div>
@@ -514,7 +515,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission deep" data-type="observatory">
+    <article class="mission deep" data-type="observatory" data-mission-id="chandra">
       <div class="media">
         <img src="https://chandra.harvard.edu/photo/2014/15year/g292.jpg" alt="Chandra X-ray image of a supernova remnant"/>
         <div class="tag">X-RAY UNIVERSE</div>
@@ -533,7 +534,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       </div>
     </article>
 
-    <article class="mission mars" data-type="infrastructure">
+    <article class="mission mars" data-type="infrastructure" data-mission-id="mars-orbiters">
       <div class="media">
         <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/2/7/27806_PIA26203_FigA.jpg" alt="Mars horizon view captured from orbit"/>
         <div class="tag">MARS ORBITER LAYER</div>
@@ -558,7 +559,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
 <section id="pipeline">
   <div class="section-title"><h2>Projects advancing</h2><div class="sub">Not yet regular science-return nodes, but moving toward major milestones</div></div>
   <div class="projects">
-    <article class="project">
+    <article class="project" data-mission-id="roman">
       <div class="stage">Launch campaign</div>
       <div>
         <div class="name">Nancy Grace Roman Space Telescope</div>
@@ -569,7 +570,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       <div class="links"><a class="btn primary" target="_blank" href="https://science.nasa.gov/mission/roman-space-telescope/">Mission ↗</a><a class="btn" target="_blank" href="https://www.nasa.gov/news-release/nasa-invites-media-to-roman-space-telescope-crew-13-launches/">Launch advisory ↗</a><a class="btn media" target="_blank" href="https://www.youtube.com/results?search_query=NASA+Roman+Space+Telescope+latest+video">Latest video ↗</a><a class="btn community" target="_blank" href="https://www.reddit.com/search/?q=NASA%20Roman%20Space%20Telescope&sort=top&t=year">Reddit ↗</a></div>
     </article>
 
-    <article class="project">
+    <article class="project" data-mission-id="hera">
       <div class="stage">Arrival sequence</div>
       <div>
         <div class="name">Hera</div>
@@ -580,7 +581,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       <div class="links"><a class="btn primary" target="_blank" href="https://www.esa.int/hera">Mission ↗</a><a class="btn" target="_blank" href="https://www.esa.int/Space_Safety/Hera/Hera_on_course_for_asteroid_rendezvous">Course update ↗</a><a class="btn media" target="_blank" href="https://www.youtube.com/results?search_query=ESA+Hera+mission+latest+video">Latest video ↗</a><a class="btn community" target="_blank" href="https://www.reddit.com/search/?q=ESA%20Hera%20mission%20asteroid&sort=top&t=year">Reddit ↗</a></div>
     </article>
 
-    <article class="project">
+    <article class="project" data-mission-id="neo-surveyor">
       <div class="stage">Build / survey prep</div>
       <div>
         <div class="name">NEO Surveyor</div>
@@ -591,7 +592,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       <div class="links"><a class="btn primary" target="_blank" href="https://science.nasa.gov/mission/neo-surveyor/">Mission ↗</a><a class="btn media" target="_blank" href="https://www.youtube.com/results?search_query=NASA+NEO+Surveyor+latest+video">Latest video ↗</a><a class="btn community" target="_blank" href="https://www.reddit.com/search/?q=NASA%20NEO%20Surveyor&sort=top&t=year">Reddit ↗</a></div>
     </article>
 
-    <article class="project">
+    <article class="project" data-mission-id="dragonfly">
       <div class="stage">Integration / testing</div>
       <div>
         <div class="name">Dragonfly</div>
@@ -602,7 +603,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       <div class="links"><a class="btn primary" target="_blank" href="https://science.nasa.gov/mission/dragonfly/">Mission ↗</a><a class="btn" target="_blank" href="https://science.nasa.gov/blogs/dragonfly/2026/03/10/nasas-dragonfly-mission-begins-rotorcraft-integration-testing-stage/">I&T update ↗</a><a class="btn media" target="_blank" href="https://www.youtube.com/results?search_query=NASA+Dragonfly+Titan+mission+latest+video">Latest video ↗</a><a class="btn community" target="_blank" href="https://www.reddit.com/search/?q=NASA%20Dragonfly%20Titan%20mission&sort=top&t=year">Reddit ↗</a></div>
     </article>
 
-    <article class="project">
+    <article class="project" data-mission-id="rosalind-franklin">
       <div class="stage">Mars rover rebuild</div>
       <div>
         <div class="name">ExoMars Rosalind Franklin</div>
@@ -613,7 +614,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       <div class="links"><a class="btn primary" target="_blank" href="https://science.nasa.gov/mission/rosalind-franklin/">NASA page ↗</a><a class="btn" target="_blank" href="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars">ESA ExoMars ↗</a><a class="btn media" target="_blank" href="https://www.youtube.com/results?search_query=ExoMars+Rosalind+Franklin+rover+latest+video">Latest video ↗</a><a class="btn community" target="_blank" href="https://www.reddit.com/search/?q=ExoMars%20Rosalind%20Franklin%20rover&sort=top&t=year">Reddit ↗</a></div>
     </article>
 
-    <article class="project">
+    <article class="project" data-mission-id="plato">
       <div class="stage">Final testing</div>
       <div>
         <div class="name">PLATO</div>
@@ -624,7 +625,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       <div class="links"><a class="btn primary" target="_blank" href="https://www.esa.int/Science_Exploration/Space_Science/Plato">Mission ↗</a><a class="btn" target="_blank" href="https://www.esa.int/Science_Exploration/Space_Science/Plato_factsheet">Factsheet ↗</a><a class="btn media" target="_blank" href="https://www.youtube.com/results?search_query=ESA+PLATO+exoplanet+mission+latest+video">Latest video ↗</a><a class="btn community" target="_blank" href="https://www.reddit.com/search/?q=ESA%20PLATO%20exoplanet%20mission&sort=top&t=year">Reddit ↗</a></div>
     </article>
 
-    <article class="project">
+    <article class="project" data-mission-id="comet-interceptor">
       <div class="stage">Development</div>
       <div>
         <div class="name">Comet Interceptor</div>
@@ -635,7 +636,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       <div class="links"><a class="btn primary" target="_blank" href="https://www.esa.int/Science_Exploration/Space_Science/Comet_Interceptor/Comet_Interceptor_factsheet">Factsheet ↗</a><a class="btn media" target="_blank" href="https://www.youtube.com/results?search_query=ESA+Comet+Interceptor+latest+video">Latest video ↗</a><a class="btn community" target="_blank" href="https://www.reddit.com/search/?q=ESA%20Comet%20Interceptor&sort=top&t=year">Reddit ↗</a></div>
     </article>
 
-    <article class="project">
+    <article class="project" data-mission-id="tianwen-2">
       <div class="stage">Sample-return cruise</div>
       <div>
         <div class="name">Tianwen-2</div>
@@ -646,7 +647,7 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
       <div class="links"><a class="btn primary" target="_blank" href="https://www.cnsa.gov.cn/n6758823/n6758838/c10676920/content.html">CNSA ↗</a><a class="btn" target="_blank" href="https://ssd.jpl.nasa.gov/sb/targets.html">JPL target list ↗</a><a class="btn media" target="_blank" href="https://www.youtube.com/results?search_query=Tianwen-2+asteroid+sample+return+latest+video">Latest video ↗</a><a class="btn community" target="_blank" href="https://www.reddit.com/search/?q=Tianwen-2%20asteroid%20sample%20return&sort=top&t=year">Reddit ↗</a></div>
     </article>
 
-    <article class="project">
+    <article class="project" data-mission-id="hayabusa2">
       <div class="stage">Extended mission</div>
       <div>
         <div class="name">Hayabusa2 Extended</div>
@@ -735,9 +736,10 @@ function renderUpdates(events){
 function renderTicker(events){
   const ticker = document.getElementById('ticker');
   if(!ticker || !events || !events.length) return;
-  ticker.innerHTML = events.slice(0, 8).map(event => {
+  ticker.innerHTML = events.filter(event => event.url).slice(0, 8).map(event => {
     const label = escapeText((event.mission_ids && event.mission_ids[0] || event.agency || 'SPACE').replace(/-/g,' ').toUpperCase());
-    return `<span><b>${label}</b> ${escapeText(event.title)}</span>`;
+    const title = escapeText(event.title);
+    return `<a class="ticker-item" href="${escapeText(event.url)}" target="_blank" rel="noreferrer" aria-label="${label}: ${title}"><b>${label}</b> ${title} <span class="out">↗</span></a>`;
   }).join('');
 }
 
@@ -782,6 +784,7 @@ let mapData = null;
 let mapFilter = 'all';
 let whereMode = 'strip';
 let selectedMissionId = null;
+let missionTargetTimer = null;
 const STRIP_ZONES = [
   {id:'inner', label:'Sun / Inner solar', range:'Parker, Solar Orbiter, Mercury cruise'},
   {id:'earth', label:'Earth + L2', range:'Earth orbit, TESS, Hubble, Webb, Euclid'},
@@ -856,14 +859,25 @@ function selectMissionById(id){
   if(item) selectMission(item);
 }
 
-function selectMission(item){
+function selectMission(item, navigate = true){
   selectedMissionId = item.id;
-  const focus = document.getElementById('map-focus');
-  if(focus){
-    const au = Number(item.au || 0);
-    focus.innerHTML = `<div class="title">${escapeText(item.name)}</div><div class="meta">${escapeText(item.group || '')} • ${au.toFixed(2)} AU from Sun</div><div class="source">${escapeText(item.position_source || item.source || 'schematic')} • ${escapeText(item.note || '')}</div>`;
-  }
   if(mapData) renderMissionStrip(mapData.missions || []);
+  if(!navigate) return;
+
+  const target = Array.from(document.querySelectorAll('[data-mission-id]')).find(card => card.dataset.missionId === item.id);
+  if(!target) return;
+
+  if(target.classList.contains('mission') && getComputedStyle(target).display === 'none'){
+    document.querySelectorAll('.mission').forEach(card => card.style.display = 'flex');
+    document.querySelectorAll('.controls .chip').forEach(chip => chip.classList.remove('on'));
+    document.querySelector('.controls .chip')?.classList.add('on');
+  }
+
+  document.querySelectorAll('.mission.is-target,.project.is-target').forEach(card => card.classList.remove('is-target'));
+  target.classList.add('is-target');
+  target.scrollIntoView({behavior:'smooth', block:'start'});
+  window.clearTimeout(missionTargetTimer);
+  missionTargetTimer = window.setTimeout(() => target.classList.remove('is-target'), 2200);
 }
 
 function setWhereMode(mode, el){
@@ -941,7 +955,7 @@ async function loadPositions(){
     const status = document.getElementById('map-status');
     if(generated) generated.textContent = sourceAge(data.generated_at);
     if(status) status.innerHTML = `<b>Position layer:</b> ${data.summary?.mission_count || 0} missions rendered. ${data.summary?.horizons_positions || 0} use JPL Horizons vectors; ${data.summary?.fallback_positions || 0} are anchored or schematic for readability.`;
-    if(!selectedMissionId && data.missions && data.missions.length) selectMission(data.missions.find(item => item.id === 'webb') || data.missions[0]);
+    if(!selectedMissionId && data.missions && data.missions.length) selectMission(data.missions.find(item => item.id === 'webb') || data.missions[0], false);
     renderMissionStrip(data.missions || []);
     renderSolarMap(data);
     setWhereMode(whereMode, document.querySelector(`.map-actions .chip${whereMode === 'strip' ? ':first-child' : ':last-child'}`));
