@@ -24,17 +24,6 @@ main{padding:18px 22px 60px;max-width:1600px;width:100%;margin:auto}
 h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
 .ticker{margin:14px 0;border:1px solid var(--line);background:var(--panel);padding:10px 12px;display:flex;gap:24px;overflow:auto;white-space:nowrap;font-size:12px}
 .ticker b{color:var(--amber)}.ticker span{color:#b7c2cf}
-.briefing{margin:14px 0 12px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(340px,.75fr)}
-.briefing-copy{padding:18px 18px 16px;display:flex;flex-direction:column;gap:14px}
-.briefing-copy h2{font-size:18px;margin:0;letter-spacing:.04em;text-transform:uppercase}
-.briefing-copy p{margin:0;color:#b8c3cf;font-size:13px;line-height:1.5;max-width:780px}
-.briefing-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.briefing-item{border:1px solid #202b38;background:#0a0f15;padding:10px;border-radius:6px;min-height:98px}
-.briefing-item .n{font-size:10px;color:var(--accent);letter-spacing:.12em;text-transform:uppercase}
-.briefing-item .h{font-size:13px;font-weight:750;margin:5px 0 4px}
-.briefing-item .b{font-size:11px;color:#9faab8;line-height:1.4}
-.briefing-visual{min-height:240px;background:url("assets/images/mission-briefing-hero.png") center/cover no-repeat;position:relative}
-.briefing-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0d1219 0%,rgba(13,18,25,.45) 36%,rgba(13,18,25,.05) 100%)}
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:14px}
 .metric{grid-column:span 3}.metric .v{font-size:24px;font-weight:750;margin-top:8px}.metric .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
@@ -47,8 +36,8 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
 .pipeline-track{height:5px;background:#251f17;position:relative}.pipeline-fill{height:100%;background:linear-gradient(90deg,#8b5f2a,#ffc66d)}
 .pipeline-row .val{color:#ffd89a}
 .update{padding:11px 0;border-bottom:1px solid #202a36}.update:last-child{border-bottom:0}.update .time{font-size:10px;color:var(--muted)}.update .head{font-size:13px;font-weight:650;margin:3px 0}.update .body{font-size:12px;line-height:1.45;color:#aeb9c6}
-.live-panel{grid-column:span 12;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:12px}.live-status{font-size:12px;color:#b9c4d0;line-height:1.5}.live-status b{color:var(--text)}.source-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.source-pill{border:1px solid #263445;background:#0a0f15;border-radius:6px;padding:8px;font-size:10px;color:#aeb9c6}.source-pill .ok{color:var(--green)}.source-pill .bad{color:var(--red)}.source-pill .label{display:block;color:#e6eef8;font-weight:700;margin-bottom:3px}.live-note{margin-top:8px;font-size:10px;color:var(--muted)}.update .src{font-size:10px;color:var(--accent);margin-top:6px}
-.where-map{grid-column:span 12;display:grid;grid-template-columns:minmax(420px,1fr) 360px;gap:12px}.map-wrap{position:relative;min-height:560px;border:1px solid #1f2c3a;border-radius:8px;background:radial-gradient(circle at center,#101822 0,#090d13 60%,#070a0f 100%);overflow:hidden}.map-wrap svg{width:100%;height:100%;display:block;min-height:560px}.orbit{fill:none;stroke:#243345;stroke-width:1;opacity:.75}.orbit-label{fill:#758499;font-size:10px}.planet{stroke:#0b0f15;stroke-width:1.5}.mission-dot{stroke:#fff;stroke-width:.8;cursor:pointer}.mission-dot.horizons{fill:#7dd3fc}.mission-dot.anchored{fill:#66e3a4}.mission-dot.pipeline{fill:#ffc66d}.mission-dot.schematic{fill:#d9c8ff}.map-label{fill:#dbe7f3;font-size:10px;paint-order:stroke;stroke:#05080d;stroke-width:3px;stroke-linejoin:round}.map-side{display:flex;flex-direction:column;gap:10px}.map-side .live-status{border-left:2px solid #35536b;background:#0a0f15;padding:10px}.map-tools{display:flex;gap:7px;flex-wrap:wrap}.map-list{display:grid;grid-template-columns:1fr;gap:7px;max-height:430px;overflow:auto;padding-right:2px}.map-item{border:1px solid #253345;background:#0a0f15;border-radius:6px;padding:8px;font-family:inherit;color:inherit;text-align:left;font-size:11px;line-height:1.4;cursor:pointer}.map-item:hover{border-color:#5786a0}.map-item b{font-size:12px}.map-item .meta{color:#93a0b0;margin-top:3px}.map-item .src{color:var(--accent);font-size:10px;margin-top:4px}.scale-note{font-size:10px;color:var(--muted);line-height:1.45}
+.live-status{font-size:12px;color:#b9c4d0;line-height:1.5}.live-status b{color:var(--text)}.update .src{font-size:10px;color:var(--accent);margin-top:6px}
+.where-map{display:grid;grid-template-columns:minmax(420px,1fr) 360px;gap:12px;margin-bottom:14px}.map-wrap{position:relative;min-height:560px;border:1px solid #1f2c3a;border-radius:8px;background:radial-gradient(circle at center,#101822 0,#090d13 60%,#070a0f 100%);overflow:hidden}.map-wrap svg{width:100%;height:100%;display:block;min-height:560px}.orbit{fill:none;stroke:#243345;stroke-width:1;opacity:.75}.orbit-label{fill:#758499;font-size:10px}.planet{stroke:#0b0f15;stroke-width:1.5}.mission-dot{stroke:#fff;stroke-width:.8;cursor:pointer}.mission-dot.horizons{fill:#7dd3fc}.mission-dot.anchored{fill:#66e3a4}.mission-dot.pipeline{fill:#ffc66d}.mission-dot.schematic{fill:#d9c8ff}.map-label{fill:#dbe7f3;font-size:10px;paint-order:stroke;stroke:#05080d;stroke-width:3px;stroke-linejoin:round}.map-side{display:flex;flex-direction:column;gap:10px}.map-side .live-status{border-left:2px solid #35536b;background:#0a0f15;padding:10px}.map-tools{display:flex;gap:7px;flex-wrap:wrap}.map-list{display:grid;grid-template-columns:1fr;gap:7px;max-height:430px;overflow:auto;padding-right:2px}.map-item{border:1px solid #253345;background:#0a0f15;border-radius:6px;padding:8px;font-family:inherit;color:inherit;text-align:left;font-size:11px;line-height:1.4;cursor:pointer}.map-item:hover{border-color:#5786a0}.map-item b{font-size:12px}.map-item .meta{color:#93a0b0;margin-top:3px}.map-item .src{color:var(--accent);font-size:10px;margin-top:4px}.scale-note{font-size:10px;color:var(--muted);line-height:1.45}
 .where-main{min-width:0}.map-actions{display:flex;gap:7px;flex-wrap:wrap}.where-strip{display:grid;grid-template-columns:repeat(7,minmax(120px,1fr));gap:8px;min-height:560px}.zone{border:1px solid #253345;border-radius:8px;background:#0a0f15;display:flex;flex-direction:column;min-width:0}.zone-head{padding:10px;border-bottom:1px solid #202a36}.zone-head .label{font-size:10px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}.zone-head .range{font-size:10px;color:var(--muted);margin-top:3px}.zone-body{padding:8px;display:flex;flex-direction:column;gap:7px;min-height:0}.mission-pill{width:100%;border:1px solid #2b3949;border-radius:6px;background:#0d131b;color:#dce6f0;padding:7px;text-align:left;font:inherit;font-size:11px;line-height:1.25;cursor:pointer}.mission-pill:hover,.mission-pill.on{border-color:#5786a0;background:#10202b}.mission-pill .dist{display:block;margin-top:3px;color:#98a6b7;font-size:10px}.mission-pill .dot{display:inline-block;width:7px;height:7px;border-radius:999px;margin-right:5px}.dot.horizons{background:#7dd3fc}.dot.anchored{background:#66e3a4}.dot.pipeline{background:#ffc66d}.dot.schematic{background:#d9c8ff}.is-hidden{display:none}.map-focus{border:1px solid #263445;background:#0a0f15;border-radius:8px;padding:11px;font-size:12px;line-height:1.45}.map-focus .title{font-size:15px;font-weight:750}.map-focus .meta{color:#a9b5c3;margin-top:5px}.map-focus .source{color:var(--accent);font-size:10px;margin-top:7px}.map-legend{display:flex;gap:8px;flex-wrap:wrap;font-size:10px;color:#aeb9c6}.map-legend span{display:inline-flex;align-items:center;gap:4px}
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}.chip{font-size:11px;border:1px solid var(--line);padding:6px 8px;border-radius:999px;color:var(--muted);cursor:pointer;background:#0c1118}.chip.on{background:#132230;color:var(--accent);border-color:#244d67}
 .missions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -70,8 +59,8 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
 .project .stats{grid-template-columns:1fr}.project .ai{border-left-color:#7c5a28;background:#100e0b}
 .reading{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.read{padding:13px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}.read .pub{font-size:10px;color:var(--accent);letter-spacing:.09em;text-transform:uppercase}.read .title{font-size:14px;font-weight:700;margin:5px 0}.read .desc{font-size:12px;color:#aab5c2;line-height:1.45}
 .footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:10px;line-height:1.6}
-@media(max-width:1050px){.site-header{align-items:flex-start;flex-direction:column}.header-note{text-align:left}.briefing{grid-template-columns:1fr}.briefing-visual{min-height:210px}.metric{grid-column:span 6}.frontier,.updates{grid-column:span 12}.live-panel,.where-map{grid-template-columns:1fr}.where-strip{grid-template-columns:repeat(2,minmax(0,1fr));min-height:0}.source-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.missions{grid-template-columns:1fr 1fr}.projects{grid-template-columns:1fr 1fr}}
-@media(max-width:680px){main{padding:14px}.site-header{margin:-14px -14px 14px;padding:12px 14px}.header-note{white-space:normal}.briefing-list{grid-template-columns:1fr}.metric{grid-column:span 12}.missions,.reading,.projects,.source-grid,.where-strip{grid-template-columns:1fr}.pipeline-row{grid-template-columns:82px 1fr 92px}.topbar{align-items:flex-start}.map-wrap{min-height:430px}.map-wrap svg{min-height:430px}}
+@media(max-width:1050px){.site-header{align-items:flex-start;flex-direction:column}.header-note{text-align:left}.metric{grid-column:span 6}.frontier,.updates{grid-column:span 12}.where-map{grid-template-columns:1fr}.where-strip{grid-template-columns:repeat(2,minmax(0,1fr));min-height:0}.missions{grid-template-columns:1fr 1fr}.projects{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){main{padding:14px}.site-header{margin:-14px -14px 14px;padding:12px 14px}.header-note{white-space:normal}.metric{grid-column:span 12}.missions,.reading,.projects,.where-strip{grid-template-columns:1fr}.pipeline-row{grid-template-columns:82px 1fr 92px}.topbar{align-items:flex-start}.map-wrap{min-height:430px}.map-wrap svg{min-height:430px}}
 </style>
 </head>
 <body>
@@ -80,9 +69,8 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
 <header class="site-header">
   <div class="brand">SPACE <span>//</span> INTELLIGENCE</div>
   <nav class="nav">
-    <a class="active" href="#overview">Overview</a>
+    <a class="active" href="#where">Where</a>
     <a href="#frontier">Frontier</a>
-    <a href="#where">Where</a>
     <a href="#missions">Missions</a>
     <a href="#observatories">Observatories</a>
     <a href="#pipeline">Pipeline</a>
@@ -91,6 +79,49 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
   </nav>
   <div class="header-note"><span id="snapshot-date">Snapshot: 08 Aug 2026</span><br/><span id="snapshot-status">Space mission briefing for curious non-specialists</span></div>
 </header>
+
+<section class="card where-map" id="where">
+  <div class="where-main">
+    <div class="section-title" style="margin:0 0 8px">
+      <h2>Where everything is today</h2>
+      <div class="sub" id="map-generated">Waiting for position pull</div>
+    </div>
+    <div class="map-actions" style="margin-bottom:10px">
+      <button class="chip on" onclick="setWhereMode('strip',this)">Mission strip</button>
+      <button class="chip" onclick="setWhereMode('orbit',this)">Orbit map</button>
+    </div>
+    <div class="where-strip" id="where-strip"></div>
+    <div class="map-wrap orbit-view is-hidden" id="orbit-view"><svg id="solar-map" role="img" aria-label="Compressed solar system map of active missions"></svg></div>
+  </div>
+  <aside class="map-side">
+    <div class="live-status" id="map-status"><b>Position layer:</b> Run the position updater to load today's map. Heliocentric vectors use JPL Horizons when available; landed, Earth-orbiting, and pipeline missions are anchored for readability.</div>
+    <div class="map-focus" id="map-focus">
+      <div class="title">Select a mission</div>
+      <div class="meta">The strip groups missions by operational neighborhood so the daily position layer is easier to scan.</div>
+    </div>
+    <div class="map-legend">
+      <span><i class="dot horizons"></i>JPL Horizons</span>
+      <span><i class="dot anchored"></i>Anchored</span>
+      <span><i class="dot schematic"></i>Schematic</span>
+      <span><i class="dot pipeline"></i>Pipeline</span>
+    </div>
+    <div class="map-tools">
+      <button class="chip on" onclick="filterMap('all',this)">All</button>
+      <button class="chip" onclick="filterMap('frontier',this)">Frontier</button>
+      <button class="chip" onclick="filterMap('inner',this)">Inner</button>
+      <button class="chip" onclick="filterMap('mars',this)">Mars</button>
+      <button class="chip" onclick="filterMap('earth',this)">Earth/L2</button>
+      <button class="chip" onclick="filterMap('asteroid',this)">Asteroid</button>
+      <button class="chip" onclick="filterMap('jupiter',this)">Jupiter</button>
+      <button class="chip" onclick="filterMap('pipeline',this)">Pipeline</button>
+    </div>
+    <div class="map-list" id="map-list">
+      <div class="map-item"><b>No position data loaded yet</b><div class="meta">Command: python3 scripts/update_positions.py</div></div>
+    </div>
+    <div class="scale-note">Default view is a mission-neighborhood strip. Orbit mode uses compressed radial scale so Voyager-class distances and inner-solar-system missions can coexist visually.</div>
+  </aside>
+</section>
+
 <section id="overview">
   <div class="topbar">
     <div><div class="kicker">Humanity's active eyes & machines beyond Earth</div><h1>Mission Control</h1></div>
@@ -107,80 +138,11 @@ h1{font-size:25px;margin:4px 0 0;letter-spacing:.02em}
     <span><b>PARKER</b> 28th close solar pass completed at 3.8M mi from surface</span>
   </div>
 
-  <div class="briefing">
-    <div class="briefing-copy">
-      <div>
-        <div class="kicker">What this dashboard is for</div>
-        <h2>Track the latest and coolest things happening in space</h2>
-      </div>
-      <p>Follow the active spacecraft, rovers, probes, and observatories that are actually changing what we know: what they saw, where they are, what changed recently, and which upcoming missions are about to matter.</p>
-      <div class="briefing-list">
-        <div class="briefing-item"><div class="n">What changed</div><div class="h">High-signal updates first</div><div class="b">Skip routine feed noise and start with mission events that actually change the story.</div></div>
-        <div class="briefing-item"><div class="n">What to see</div><div class="h">Real mission imagery</div><div class="b">Surface panoramas, telescope releases, flyby images, and source-linked visual evidence.</div></div>
-        <div class="briefing-item"><div class="n">What is next</div><div class="h">Frontier pipeline</div><div class="b">Track launches, arrivals, flybys, and missions moving toward first science.</div></div>
-      </div>
-    </div>
-    <div class="briefing-visual" aria-label="Illustrated mission intelligence scene with Mars terrain, spacecraft, and orbital paths"></div>
-  </div>
-
   <div class="grid">
     <div class="card metric"><div class="l">Featured active systems</div><div class="v">19</div></div>
     <div class="card metric"><div class="l">Interstellar probes</div><div class="v">2</div></div>
     <div class="card metric"><div class="l">Mars surface robots</div><div class="v">2</div></div>
     <div class="card metric"><div class="l">Pipeline projects</div><div class="v">9</div></div>
-
-    <div class="card live-panel" id="live">
-      <div>
-        <div class="section-title" style="margin:0 0 5px"><h2>Latest source pull</h2><div class="sub" id="live-generated">Waiting for updater</div></div>
-        <div class="live-status" id="live-status"><b>V0.3 data layer:</b> Run the updater to replace the static fallback with source-ranked NASA, JPL, and ESA items.</div>
-        <div class="live-note" id="live-note">Command: python3 scripts/update_space_data.py</div>
-      </div>
-      <div class="source-grid" id="source-grid">
-        <div class="source-pill"><span class="label">Official feeds</span><span class="bad">Not loaded yet</span></div>
-      </div>
-    </div>
-
-    <div class="card where-map" id="where">
-      <div class="where-main">
-        <div class="section-title" style="margin:0 0 8px">
-          <h2>Where everything is today</h2>
-          <div class="sub" id="map-generated">Waiting for position pull</div>
-        </div>
-        <div class="map-actions" style="margin-bottom:10px">
-          <button class="chip on" onclick="setWhereMode('strip',this)">Mission strip</button>
-          <button class="chip" onclick="setWhereMode('orbit',this)">Orbit map</button>
-        </div>
-        <div class="where-strip" id="where-strip"></div>
-        <div class="map-wrap orbit-view is-hidden" id="orbit-view"><svg id="solar-map" role="img" aria-label="Compressed solar system map of active missions"></svg></div>
-      </div>
-      <aside class="map-side">
-        <div class="live-status" id="map-status"><b>Position layer:</b> Run the position updater to load today's map. Heliocentric vectors use JPL Horizons when available; landed, Earth-orbiting, and pipeline missions are anchored for readability.</div>
-        <div class="map-focus" id="map-focus">
-          <div class="title">Select a mission</div>
-          <div class="meta">The strip groups missions by operational neighborhood so the daily position layer is easier to scan.</div>
-        </div>
-        <div class="map-legend">
-          <span><i class="dot horizons"></i>JPL Horizons</span>
-          <span><i class="dot anchored"></i>Anchored</span>
-          <span><i class="dot schematic"></i>Schematic</span>
-          <span><i class="dot pipeline"></i>Pipeline</span>
-        </div>
-        <div class="map-tools">
-          <button class="chip on" onclick="filterMap('all',this)">All</button>
-          <button class="chip" onclick="filterMap('frontier',this)">Frontier</button>
-          <button class="chip" onclick="filterMap('inner',this)">Inner</button>
-          <button class="chip" onclick="filterMap('mars',this)">Mars</button>
-          <button class="chip" onclick="filterMap('earth',this)">Earth/L2</button>
-          <button class="chip" onclick="filterMap('asteroid',this)">Asteroid</button>
-          <button class="chip" onclick="filterMap('jupiter',this)">Jupiter</button>
-          <button class="chip" onclick="filterMap('pipeline',this)">Pipeline</button>
-        </div>
-        <div class="map-list" id="map-list">
-          <div class="map-item"><b>No position data loaded yet</b><div class="meta">Command: python3 scripts/update_positions.py</div></div>
-        </div>
-        <div class="scale-note">Default view is a mission-neighborhood strip. Orbit mode uses compressed radial scale so Voyager-class distances and inner-solar-system missions can coexist visually.</div>
-      </aside>
-    </div>
 
     <div class="card frontier" id="frontier">
       <div class="section-title" style="margin:0 0 8px"><h2>At the frontier</h2><div class="sub">Approx. heliocentric distance • AU</div></div>
