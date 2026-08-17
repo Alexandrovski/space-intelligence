@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Launch Intelligence | SPACE // INTELLIGENCE</title>
+<style>
+:root{
+  --bg:#080b10;--panel:#0d1219;--panel2:#111823;--line:#243040;--muted:#7d8a9b;
+  --text:#ecf2f8;--accent:#7dd3fc;--green:#66e3a4;--amber:#ffc66d;--red:#ff7b7b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+button,input{font:inherit}button{letter-spacing:0}a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
+.shell{min-height:100vh}.site-header{position:sticky;top:0;z-index:20;margin:-18px -22px 18px;padding:12px 22px;border-bottom:1px solid var(--line);background:rgba(8,11,16,.95);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:800;letter-spacing:.14em;font-size:14px;white-space:nowrap}.brand span{color:var(--accent)}.nav{display:flex;gap:4px;flex-wrap:wrap}.nav a{display:inline-flex;padding:7px 9px;color:var(--muted);border-radius:6px;font-size:12px}.nav a.active,.nav a:hover{background:var(--panel2);color:var(--text);text-decoration:none}.header-note{color:var(--muted);font-size:11px;line-height:1.4;text-align:right;white-space:nowrap}
+main{padding:18px 22px 60px;max-width:1600px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;gap:18px;align-items:end;padding:4px 0 15px;border-bottom:1px solid var(--line)}.kicker{font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}.topbar h1{font-size:27px;margin:5px 0 0;letter-spacing:.02em}.topbar-copy{max-width:560px;color:#aab6c3;font-size:12px;line-height:1.5;text-align:right}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);background:var(--panel);margin:14px 0}.metric{padding:12px 14px;border-right:1px solid var(--line);min-width:0}.metric:last-child{border-right:0}.metric .label{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.metric .value{font-size:19px;font-weight:760;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.metric .value.countdown{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent);font-variant-numeric:tabular-nums}
+.lead-grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(330px,.75fr);border:1px solid var(--line);background:var(--panel);min-height:430px}.launch-visual{position:relative;min-height:430px;overflow:hidden;border-right:1px solid var(--line);background:#05080c}.launch-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.04) contrast(1.07)}.launch-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,12,.18),rgba(5,8,12,.05) 42%,rgba(5,8,12,.58)),linear-gradient(180deg,rgba(5,8,12,.05),rgba(5,8,12,.9) 88%)}.lead-content{position:absolute;z-index:2;inset:0;padding:20px;display:flex;flex-direction:column;justify-content:space-between}.lead-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#d7e6f3}.status-pill{display:inline-flex;align-items:center;gap:6px;border:1px solid #365366;background:#091119d9;border-radius:999px;padding:6px 8px;font-size:10px}.status-pill:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}.status-pill.go:before{background:var(--green)}.status-pill.hold:before{background:var(--red)}.status-pill.net:before{background:var(--amber)}.lead-bottom{max-width:840px}.lead-countdown{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums}.lead-title{font-size:34px;font-weight:790;line-height:1.08;margin:8px 0 7px;letter-spacing:0}.lead-sub{font-size:13px;color:#d5dfea}.lead-source{font-size:10px;color:#aab8c6;margin-top:10px}.lead-brief{padding:18px;display:flex;flex-direction:column;gap:16px;min-width:0}.brief-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.brief-head h2{font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin:0}.signal{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--amber)}.why{font-size:15px;line-height:1.45;font-weight:630}.brief-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.brief-stat{border-top:1px solid #26313d;padding-top:8px;min-width:0}.brief-stat .key{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.brief-stat .val{font-size:12px;line-height:1.35;margin-top:4px;overflow-wrap:anywhere}.source-note{font-size:10px;line-height:1.45;color:var(--muted);border-left:2px solid #36536b;padding-left:9px}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}.action{display:inline-flex;align-items:center;justify-content:center;min-height:30px;border:1px solid #315f79;background:#0a1118;color:var(--accent);border-radius:5px;padding:7px 9px;font-size:11px}.action.secondary{border-color:#495564;color:#d4dee8}.action.media{border-color:#6d562c;color:#ffd89a}.action:hover{background:#111b25;text-decoration:none}
+.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:28px 0 10px}.section-title h2{font-size:15px;margin:0;letter-spacing:.08em;text-transform:uppercase}.section-title .sub{font-size:11px;color:var(--muted);text-align:right}.toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;border:1px solid var(--line);background:var(--panel);padding:9px 10px}.control-group{display:flex;gap:5px;align-items:center;flex-wrap:wrap}.control-label{font-size:9px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-right:3px}.chip{font-size:11px;border:1px solid var(--line);padding:6px 9px;border-radius:999px;color:var(--muted);cursor:pointer;background:#0c1118}.chip.on,.chip:hover{background:#132230;color:var(--accent);border-color:#315f79}.routine-toggle{display:flex;align-items:center;gap:7px;color:#aab6c4;font-size:11px;cursor:pointer}.routine-toggle input{accent-color:#4d9ec7}.operator-filter{display:flex;gap:6px;overflow:auto;padding:9px 1px 10px;white-space:nowrap}.operator-filter:empty{display:none}
+.manifest-wrap{border:1px solid var(--line);overflow:auto;background:var(--panel)}table{width:100%;border-collapse:collapse;min-width:1050px}th{position:sticky;top:58px;z-index:4;background:#0a0f15;color:var(--muted);font-size:9px;text-align:left;text-transform:uppercase;letter-spacing:.09em;padding:9px 10px;border-bottom:1px solid var(--line)}td{font-size:11px;padding:10px;border-bottom:1px solid #202a36;vertical-align:middle}.launch-row:hover td{background:#101721}.time{font-variant-numeric:tabular-nums;white-space:nowrap}.time strong{display:block;font-size:12px}.time span,.muted{color:var(--muted);font-size:10px}.mission-cell{min-width:270px}.mission-open{display:grid;grid-template-columns:24px 1fr;align-items:start;gap:7px;width:100%;border:0;background:transparent;color:var(--text);padding:0;text-align:left;cursor:pointer}.expander{width:22px;height:22px;border:1px solid #354354;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;color:var(--accent);font-size:15px;line-height:1}.mission-name{font-weight:720;font-size:12px;line-height:1.3}.mission-type{font-size:9px;color:var(--muted);margin-top:3px}.operator{font-weight:650}.status-text{font-size:10px;color:var(--amber)}.status-text.go{color:var(--green)}.status-text.hold{color:var(--red)}.score{display:flex;align-items:center;gap:7px;min-width:120px}.score-bar{width:48px;height:4px;background:#202a36}.score-fill{height:100%;background:var(--accent)}.score-label{font-size:10px;color:#cbd6e1}.detail-row td{padding:0;background:#090e14}.detail{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.7fr);gap:24px;padding:16px 42px 18px;border-left:2px solid var(--accent)}.detail h3{font-size:10px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin:0 0 7px}.detail p{font-size:12px;line-height:1.55;color:#bcc8d5;margin:0 0 10px}.detail-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px}.empty{padding:34px;text-align:center;color:var(--muted);font-size:12px}
+.operator-watch{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--line);background:var(--panel)}.operator-card{padding:13px;border-right:1px solid var(--line);min-height:158px;display:flex;flex-direction:column}.operator-card:last-child{border-right:0}.operator-name{font-size:14px;font-weight:750}.operator-vehicle{font-size:9px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-top:3px}.operator-copy{font-size:11px;color:#aab6c3;line-height:1.45;margin:12px 0}.operator-card a{font-size:10px;color:var(--accent);margin-top:auto}.footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:10px;line-height:1.6}
+@media(max-width:1050px){.site-header{align-items:flex-start;flex-direction:column}.header-note{text-align:left}.topbar{align-items:flex-start;flex-direction:column}.topbar-copy{text-align:left}.lead-grid{grid-template-columns:1fr}.launch-visual{border-right:0;border-bottom:1px solid var(--line)}.operator-watch{grid-template-columns:repeat(2,1fr)}.operator-card{border-bottom:1px solid var(--line)}.operator-card:nth-child(2n){border-right:0}}
+@media(max-width:680px){main{padding:14px}.site-header{margin:-14px -14px 14px;padding:12px 14px}.header-note{white-space:normal}.metrics{grid-template-columns:1fr 1fr}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--line)}.lead-grid{min-height:0}.launch-visual{min-height:400px}.lead-content{padding:15px}.lead-title{font-size:27px}.brief-stats{grid-template-columns:1fr}.toolbar{align-items:flex-start;flex-direction:column}.operator-watch{grid-template-columns:1fr}.operator-card{border-right:0}.detail{grid-template-columns:1fr;padding:15px}.section-title{align-items:flex-start;flex-direction:column}.section-title .sub{text-align:left}}
+</style>
+</head>
+<body>
+<div class="shell"><main>
+<header class="site-header">
+  <a class="brand" href="/">SPACE <span>//</span> INTELLIGENCE</a>
+  <nav class="nav">
+    <a href="/">Where</a>
+    <a href="/#frontier">Frontier</a>
+    <a href="/#missions">Missions</a>
+    <a href="/#observatories">Observatories</a>
+    <a href="/#pipeline">Pipeline</a>
+    <a class="active" href="/launches">Launches</a>
+    <a href="/#reading">Long Reads</a>
+  </nav>
+  <div class="header-note"><span id="freshness">Connecting launch feed</span><br/>30-day launch intelligence</div>
+</header>
+
+<div class="topbar">
+  <div><div class="kicker">Earth to orbit • ranked by consequence</div><h1>Launch Intelligence</h1></div>
+  <div class="topbar-copy">Upcoming launch windows, vehicle tests, payload stakes, and the signal hiding inside global launch cadence.</div>
+</div>
+
+<section class="metrics" aria-label="Launch overview">
+  <div class="metric"><div class="label">Next attempt</div><div class="value countdown" id="metric-next">--</div></div>
+  <div class="metric"><div class="label">Next 30 days</div><div class="value" id="metric-total">--</div></div>
+  <div class="metric"><div class="label">High-signal launches</div><div class="value" id="metric-signal">--</div></div>
+  <div class="metric"><div class="label">Routine cadence collapsed</div><div class="value" id="metric-routine">--</div></div>
+</section>
+
+<section class="lead-grid" aria-label="Next launch">
+  <article class="launch-visual" id="lead-visual">
+    <img id="lead-image" src="assets/images/launch-falcon-heavy.jpeg" alt="Rocket launching from a coastal launch complex"/>
+    <div class="lead-content">
+      <div class="lead-top"><div class="eyebrow">Next off the pad</div><div class="status-pill net" id="lead-status">LOADING</div></div>
+      <div class="lead-bottom">
+        <div class="lead-countdown" id="lead-countdown">T- --D --:--:--</div>
+        <div class="lead-title" id="lead-title">Loading the global manifest</div>
+        <div class="lead-sub" id="lead-sub">Vehicle and operator data incoming</div>
+        <div class="lead-source" id="lead-source">Schedule times remain subject to change.</div>
+      </div>
+    </div>
+  </article>
+  <aside class="lead-brief">
+    <div class="brief-head"><h2>Why this matters</h2><div class="signal" id="lead-signal">Assessing</div></div>
+    <div class="why" id="lead-why">Connecting to the current launch schedule.</div>
+    <div class="brief-stats">
+      <div class="brief-stat"><div class="key">Launch window</div><div class="val" id="lead-window">--</div></div>
+      <div class="brief-stat"><div class="key">Destination</div><div class="val" id="lead-orbit">--</div></div>
+      <div class="brief-stat"><div class="key">Launch site</div><div class="val" id="lead-site">--</div></div>
+      <div class="brief-stat"><div class="key">Schedule confidence</div><div class="val" id="lead-confidence">--</div></div>
+    </div>
+    <div class="source-note" id="lead-note">Launch dates move frequently. Confirm against the operator before viewing or travel.</div>
+    <div class="actions" id="lead-actions"></div>
+  </aside>
+</section>
+
+<section id="manifest">
+  <div class="section-title"><h2>Manifest</h2><div class="sub" id="manifest-summary">Loading the next 30 days</div></div>
+  <div class="toolbar">
+    <div class="control-group" aria-label="Manifest range">
+      <span class="control-label">Window</span>
+      <button class="chip" data-days="2">48 hours</button>
+      <button class="chip" data-days="7">7 days</button>
+      <button class="chip on" data-days="30">30 days</button>
+    </div>
+    <div class="control-group" aria-label="Manifest order">
+      <span class="control-label">Order</span>
+      <button class="chip on" data-sort="signal">Signal</button>
+      <button class="chip" data-sort="time">Time</button>
+    </div>
+    <label class="routine-toggle"><input id="routine-toggle" type="checkbox"/> Include routine constellation launches</label>
+  </div>
+  <div class="operator-filter" id="operator-filter" aria-label="Filter by operator"></div>
+  <div class="manifest-wrap">
+    <table>
+      <thead><tr><th>Local time</th><th>Mission</th><th>Vehicle</th><th>Operator</th><th>Launch site</th><th>Orbit</th><th>Status</th><th>Signal</th></tr></thead>
+      <tbody id="manifest-body"><tr><td colspan="8" class="empty">Loading launch manifest…</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="section-title"><h2>Program watch</h2><div class="sub">The launch systems changing cost, cadence, and access to orbit</div></div>
+  <div class="operator-watch">
+    <article class="operator-card"><div class="operator-name">SpaceX</div><div class="operator-vehicle">Falcon 9 • Falcon Heavy • Starship</div><div class="operator-copy">Watch the split between industrialized Falcon cadence and the development milestones that determine whether Starship becomes operational infrastructure.</div><a href="https://www.spacex.com/launches/" target="_blank" rel="noreferrer">Official launch archive ↗</a></article>
+    <article class="operator-card"><div class="operator-name">Blue Origin</div><div class="operator-vehicle">New Glenn • New Shepard</div><div class="operator-copy">New Glenn matters as a second reusable heavy-lift system. The signal is repeat flight, booster recovery, and the pace at which a real customer manifest clears.</div><a href="https://www.blueorigin.com/missions" target="_blank" rel="noreferrer">Official missions ↗</a></article>
+    <article class="operator-card"><div class="operator-name">Rocket Lab</div><div class="operator-vehicle">Electron • Neutron</div><div class="operator-copy">Electron proves dedicated small launch can operate at cadence. Neutron is the larger bet: moving from a specialist launcher toward constellation-scale missions.</div><a href="https://www.rocketlabusa.com/missions/next-mission/" target="_blank" rel="noreferrer">Next mission ↗</a></article>
+    <article class="operator-card"><div class="operator-name">ULA</div><div class="operator-vehicle">Vulcan</div><div class="operator-copy">Vulcan is strategically important where reliability, national-security certification, and high-energy missions matter more than headline launch volume.</div><a href="https://www.ulalaunch.com/missions/next-launch" target="_blank" rel="noreferrer">Next launch ↗</a></article>
+    <article class="operator-card"><div class="operator-name">Arianespace</div><div class="operator-vehicle">Ariane 6 • Vega C</div><div class="operator-copy">Europe's independent access to orbit depends on turning Ariane 6 from a successful vehicle into a dependable operating cadence.</div><a href="https://www.arianespace.com/missions/" target="_blank" rel="noreferrer">Mission status ↗</a></article>
+  </div>
+</section>
+
+<footer class="footer"><b>Schedule method.</b> Launch Library 2 supplies normalized launch windows, pads, vehicles, and status. Operator pages are linked for final confirmation. “Signal” is an editorial score based on mission consequence, vehicle maturity, and scientific or strategic importance; it is not a probability of success.</footer>
+</main></div>
+
+<script>
+const FALLBACK_LAUNCHES = [
+  {id:'zhuque-3-flight-2',name:'Zhuque-3 | Flight 2',mission:'Flight 2',missionType:'Test Flight',description:'Second test launch of LandSpace’s reusable methane-fueled Zhuque-3 rocket.',orbit:'LEO',net:'2026-08-18T23:35:00Z',windowStart:'2026-08-18T23:27:00Z',windowEnd:'2026-08-19T00:04:00Z',lastUpdated:'2026-08-14T13:42:55Z',status:'Go',operator:'LandSpace',vehicle:'Zhuque-3',pad:'Launch Area 96B',location:'Jiuquan Satellite Launch Center, China',image:'https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zq-3_flight_1_l_image_20251203064230.jpg',imageCredit:'LandSpace',sourceUrl:'https://www.landspace.com/',webcastUrl:'https://www.youtube.com/results?search_query=LandSpace+Zhuque-3+Flight+2',routine:false,score:88,signal:'High signal',why:'This is a vehicle-development flight. Watch whether Zhuque-3 reaches orbit and advances LandSpace’s attempt to field a reusable methane rocket.',confidence:{label:'Medium',detail:'Launch time is precise to the hour'},precision:'Hour'},
+  {id:'starlink-17-50',name:'Falcon 9 | Starlink Group 17-50',mission:'Starlink Group 17-50',missionType:'Communications',description:'A batch of satellites for SpaceX’s Starlink broadband constellation.',orbit:'LEO',net:'2026-08-19T02:00:00Z',windowStart:'2026-08-19T02:00:00Z',windowEnd:'2026-08-19T06:00:00Z',lastUpdated:'2026-08-08T20:04:17Z',status:'Go',operator:'SpaceX',vehicle:'Falcon 9 Block 5',pad:'SLC-4E',location:'Vandenberg SFB, California',image:'https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png',imageCredit:'SpaceX',sourceUrl:'https://www.spacex.com/launches/',webcastUrl:'https://www.youtube.com/@SpaceX',routine:true,score:28,signal:'Routine',why:'The intelligence signal is cadence, pad turnaround, and booster reuse rather than the individual payload batch.',confidence:{label:'High',detail:'T-0 is precise to the minute'},precision:'Minute'},
+  {id:'change-7',name:"Long March 5 | Chang'e 7",mission:"Chang'e 7",missionType:'Planetary Science',description:'A Chinese lunar south-pole mission designed to investigate the surface environment and resources.',orbit:'Lunar orbit',net:'2026-08-24T00:00:00Z',windowStart:'2026-08-24T00:00:00Z',windowEnd:'2026-08-24T01:00:00Z',lastUpdated:'2026-08-12T00:00:00Z',status:'TBC',operator:'CASC',vehicle:'Long March 5',pad:'101',location:'Wenchang Space Launch Site, China',image:'https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_5_tj_image_20260612043435.jpg',imageCredit:'CASC',sourceUrl:'https://www.cnsa.gov.cn/english/',webcastUrl:'https://www.youtube.com/results?search_query=Chang%27e+7+launch',routine:false,score:96,signal:'Landmark',why:'This mission extends the current lunar campaign toward the south-pole environment. Accurate translunar injection matters as much as liftoff.',confidence:{label:'Medium',detail:'Launch time is precise to the hour'},precision:'Hour'},
+  {id:'ariane-mtgi2',name:'Ariane 62 | MTG-I2',mission:'MTG-I2',missionType:'Earth Science',description:'A next-generation European meteorological satellite for higher-frequency observation of severe weather.',orbit:'GTO',net:'2026-08-27T20:10:00Z',windowStart:'2026-08-27T20:10:00Z',windowEnd:'2026-08-27T21:10:00Z',lastUpdated:'2026-08-10T00:00:00Z',status:'Go',operator:'Arianespace',vehicle:'Ariane 62',pad:'Ariane Launch Area 4',location:'Guiana Space Centre, French Guiana',image:'https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg',imageCredit:'ESA / CNES / Arianespace',sourceUrl:'https://www.arianespace.com/missions/',webcastUrl:'https://www.youtube.com/@arianespace',routine:false,score:72,signal:'Notable',why:'MTG-I2 adds observing capacity for fast-changing weather. Payload deployment and transfer toward geostationary orbit are the key milestones.',confidence:{label:'High',detail:'T-0 is precise to the minute'},precision:'Minute'},
+  {id:'roman',name:'Falcon Heavy | Nancy Grace Roman Space Telescope',mission:'Nancy Grace Roman Space Telescope',missionType:'Astrophysics',description:'NASA’s wide-field infrared survey telescope, designed to study dark energy, exoplanets, and the infrared universe from Sun–Earth L2.',orbit:'L2',net:'2026-08-30T11:26:00Z',windowStart:'2026-08-30T11:26:00Z',windowEnd:'2026-08-30T12:30:00Z',lastUpdated:'2026-08-15T00:00:00Z',status:'Go',operator:'SpaceX',vehicle:'Falcon Heavy',pad:'Launch Complex 39A',location:'Kennedy Space Center, Florida',image:'assets/images/launch-falcon-heavy.jpeg',imageCredit:'SpaceX',sourceUrl:'https://science.nasa.gov/mission/roman-space-telescope/',webcastUrl:'https://www.youtube.com/@NASA',routine:false,score:99,signal:'Landmark',why:'Roman can survey the sky at Hubble-class sharpness with a vastly wider field. A clean injection toward L2 begins one of the decade’s most consequential astronomy missions.',confidence:{label:'High',detail:'T-0 is precise to the minute'},precision:'Minute'}
+];
+
+const state={launches:[],days:30,sort:'signal',showRoutine:false,operator:'all',selected:null,usingFallback:false};
+const $=id=>document.getElementById(id);
+const escapeText=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const safeUrl=value=>/^https?:\/\//i.test(String(value||''))||String(value||'').startsWith('assets/')?String(value):'#';
+
+function statusClass(value){const text=String(value||'').toLowerCase();if(text.includes('go')||text.includes('success'))return'go';if(text.includes('hold')||text.includes('fail'))return'hold';return'net'}
+function formatDate(value){const date=new Date(value);return Number.isNaN(date.getTime())?'TBD':new Intl.DateTimeFormat(undefined,{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}).format(date)}
+function formatShort(value){const date=new Date(value);return Number.isNaN(date.getTime())?'TBD':new Intl.DateTimeFormat(undefined,{month:'short',day:'numeric'}).format(date)}
+function formatTime(value){const date=new Date(value);return Number.isNaN(date.getTime())?'TBD':new Intl.DateTimeFormat(undefined,{hour:'numeric',minute:'2-digit'}).format(date)}
+function countdown(value){const delta=new Date(value).getTime()-Date.now();if(!Number.isFinite(delta))return'T- TBD';if(delta<=0)return'T-0 WINDOW';const seconds=Math.floor(delta/1000);const days=Math.floor(seconds/86400);const hours=Math.floor(seconds%86400/3600);const mins=Math.floor(seconds%3600/60);const secs=seconds%60;return`T- ${String(days).padStart(2,'0')}D ${String(hours).padStart(2,'0')}:${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`}
+function freshness(value){const delta=Date.now()-new Date(value).getTime();if(!Number.isFinite(delta))return'Unknown freshness';const hours=Math.max(0,Math.round(delta/36e5));if(hours<1)return'Updated just now';if(hours<24)return`Updated ${hours}h ago`;return`Updated ${Math.round(hours/24)}d ago`}
+function windowText(launch){if(!launch.windowStart||!launch.windowEnd)return formatDate(launch.net);const start=new Date(launch.windowStart),end=new Date(launch.windowEnd);const minutes=Math.max(0,Math.round((end-start)/60000));return`${formatDate(start)} • ${minutes?`${minutes} min window`:'instantaneous'}`}
+
+function nextLaunch(){return state.launches.filter(item=>new Date(item.net).getTime()>Date.now()-36e5).sort((a,b)=>new Date(a.net)-new Date(b.net))[0]||state.launches[0]}
+
+function renderMetrics(){const next=nextLaunch();$('metric-next').textContent=next?countdown(next.net):'No launch';$('metric-total').textContent=String(state.launches.length);$('metric-signal').textContent=String(state.launches.filter(item=>item.score>=82).length);$('metric-routine').textContent=String(state.launches.filter(item=>item.routine).length)}
+
+function renderLead(){const launch=nextLaunch();if(!launch)return;const image=$('lead-image');image.src=safeUrl(launch.image)||'assets/images/launch-falcon-heavy.jpeg';image.alt=`${launch.vehicle} launch image`;image.onerror=()=>{image.src='assets/images/launch-falcon-heavy.jpeg'};$('lead-status').className=`status-pill ${statusClass(launch.status)}`;$('lead-status').textContent=launch.status;$('lead-countdown').dataset.countdown=launch.net;$('lead-countdown').textContent=countdown(launch.net);$('lead-title').textContent=launch.mission;$('lead-sub').textContent=`${launch.operator} • ${launch.vehicle}`;$('lead-source').textContent=`${formatDate(launch.net)} • Image: ${launch.imageCredit||launch.operator}`;$('lead-signal').textContent=`${launch.signal} • ${launch.score}`;$('lead-why').textContent=launch.why;$('lead-window').textContent=windowText(launch);$('lead-orbit').textContent=launch.orbit;$('lead-site').textContent=`${launch.pad} • ${launch.location}`;$('lead-confidence').textContent=`${launch.confidence?.label||'Developing'} • ${launch.confidence?.detail||launch.precision}`;$('lead-note').textContent=`${freshness(launch.lastUpdated)}. Launch dates move frequently; confirm against the operator before viewing or travel.`;$('lead-actions').innerHTML=`<a class="action" href="${safeUrl(launch.sourceUrl)}" target="_blank" rel="noreferrer">Mission source ↗</a><a class="action media" href="${safeUrl(launch.webcastUrl)}" target="_blank" rel="noreferrer">Watch channel ↗</a>${launch.mapUrl?`<a class="action secondary" href="${safeUrl(launch.mapUrl)}" target="_blank" rel="noreferrer">Launch site ↗</a>`:''}`}
+
+function visibleLaunches(){const horizon=Date.now()+state.days*864e5;let items=state.launches.filter(item=>new Date(item.net).getTime()<=horizon);if(!state.showRoutine)items=items.filter(item=>!item.routine);if(state.operator!=='all')items=items.filter(item=>item.operator===state.operator);items.sort(state.sort==='time'?(a,b)=>new Date(a.net)-new Date(b.net):(a,b)=>b.score-a.score||new Date(a.net)-new Date(b.net));return items}
+
+function detailMarkup(item){return`<tr class="detail-row"><td colspan="8"><div class="detail"><div><h3>Why this matters</h3><p>${escapeText(item.why)}</p><h3>Mission</h3><p>${escapeText(item.description)}</p></div><div><div class="detail-meta"><div class="brief-stat"><div class="key">Window</div><div class="val">${escapeText(windowText(item))}</div></div><div class="brief-stat"><div class="key">Source freshness</div><div class="val">${escapeText(freshness(item.lastUpdated))}</div></div><div class="brief-stat"><div class="key">Pad</div><div class="val">${escapeText(item.pad)}</div></div><div class="brief-stat"><div class="key">Location</div><div class="val">${escapeText(item.location)}</div></div></div><div class="actions" style="margin-top:14px"><a class="action" href="${safeUrl(item.sourceUrl)}" target="_blank" rel="noreferrer">Mission source ↗</a><a class="action media" href="${safeUrl(item.webcastUrl)}" target="_blank" rel="noreferrer">Watch ↗</a></div></div></div></td></tr>`}
+
+function renderManifest(){const items=visibleLaunches();$('manifest-summary').textContent=`${items.length} visible • ${state.usingFallback?'cached fallback':'live normalized schedule'}`;if(!items.length){$('manifest-body').innerHTML='<tr><td colspan="8" class="empty">No launches match this view.</td></tr>';return}$('manifest-body').innerHTML=items.map(item=>{const open=state.selected===item.id;return`<tr class="launch-row"><td class="time"><strong>${escapeText(formatShort(item.net))}</strong><span>${escapeText(formatTime(item.net))}</span></td><td class="mission-cell"><button class="mission-open" onclick="toggleLaunch('${escapeText(item.id)}')" aria-expanded="${open}"><span class="expander">${open?'−':'+'}</span><span><span class="mission-name">${escapeText(item.mission)}</span><span class="mission-type">${escapeText(item.missionType)}</span></span></button></td><td>${escapeText(item.vehicle)}</td><td><span class="operator">${escapeText(item.operator)}</span></td><td>${escapeText(item.location)}</td><td>${escapeText(item.orbit)}</td><td><span class="status-text ${statusClass(item.status)}">${escapeText(item.status)}</span></td><td><div class="score"><div class="score-bar"><div class="score-fill" style="width:${Math.max(8,item.score)}%"></div></div><span class="score-label">${escapeText(item.signal)}</span></div></td></tr>${open?detailMarkup(item):''}`}).join('')}
+
+function renderOperators(){const counts=new Map();state.launches.filter(item=>!item.routine).forEach(item=>counts.set(item.operator,(counts.get(item.operator)||0)+1));const operators=[...counts.entries()].sort((a,b)=>b[1]-a[1]);$('operator-filter').innerHTML=`<button class="chip ${state.operator==='all'?'on':''}" onclick="setOperator('all')">All operators</button>`+operators.map(([name,count])=>`<button class="chip ${state.operator===name?'on':''}" onclick="setOperator(decodeURIComponent('${encodeURIComponent(name)}'))">${escapeText(name)} ${count}</button>`).join('')}
+function toggleLaunch(id){state.selected=state.selected===id?null:id;renderManifest()}
+function setOperator(name){state.operator=name;state.selected=null;renderOperators();renderManifest()}
+function renderAll(){renderMetrics();renderLead();renderOperators();renderManifest()}
+
+document.querySelectorAll('[data-days]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-days]').forEach(item=>item.classList.remove('on'));button.classList.add('on');state.days=Number(button.dataset.days);state.selected=null;renderManifest()}));
+document.querySelectorAll('[data-sort]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-sort]').forEach(item=>item.classList.remove('on'));button.classList.add('on');state.sort=button.dataset.sort;state.selected=null;renderManifest()}));
+$('routine-toggle').addEventListener('change',event=>{state.showRoutine=event.target.checked;state.selected=null;renderManifest()});
+
+async function loadLaunches(){try{const response=await fetch('/api/launches',{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();if(!data.launches?.length)throw new Error('Empty schedule');state.launches=data.launches;state.usingFallback=false;$('freshness').textContent=`Source pull: ${formatDate(data.generatedAt)}`}catch(error){console.warn('Using cached launch fallback',error);state.launches=FALLBACK_LAUNCHES;state.usingFallback=true;$('freshness').textContent='Cached schedule: 17 Aug 2026'}renderAll()}
+setInterval(()=>{document.querySelectorAll('[data-countdown]').forEach(element=>element.textContent=countdown(element.dataset.countdown));const next=nextLaunch();if(next)$('metric-next').textContent=countdown(next.net)},1000);
+loadLaunches();
+</script>
+</body>
+</html>

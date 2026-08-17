@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
           source: "/",
           destination: "/dashboard.html",
         },
+        {
+          source: "/launches",
+          destination: "/launches.html",
+        },
       ],
       afterFiles: [],
       fallback: [],
